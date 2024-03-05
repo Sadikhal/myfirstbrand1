@@ -1,7 +1,34 @@
-import { Inter } from "next/font/google";
+import {Teko,Rubik,Raleway } from "next/font/google";
 import "./globals.css";
+import Navbar from "../components/Navbar";
+import Footer from "@/components/sections/Footer";
+import { Separator } from "@/components/ui/separator";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--raleway",
+  weight: ["100","200","600",'300',"700","500","400"],
+  // display : 'swap'
+
+
+});
+
+const rubik = Rubik({
+  subsets: ["latin"],
+  variable: "--rubik",
+  weight: ["300","400","600",'300',"700","500"],
+  // display : 'swap'
+});
+const teko = Teko({
+  subsets: ["latin"],
+  variable: "--teko",
+  weight: ["400","600",'300',"700","500"],
+  // display : 'swap'
+
+});
+
+
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +37,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark">
+      
+      <body className={` ${rubik.variable} ${raleway.variable} ${teko.variable}`}>{children}
+      <Separator className="w-full"/>
+         <div className="flex items-center justify-center" >
+        <Footer/>
+        </div> 
+      </body>
+      
     </html>
   );
 }

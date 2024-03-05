@@ -1,0 +1,83 @@
+'use client'
+
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Services } from './Service';
+import Mobilenav from './MobileNav';
+import { Separator } from '../ui/separator';
+
+
+const NavbarRoutes = () =>{
+
+  const pathname = usePathname();
+
+  const routes = [
+    {
+       label: 'Home', href: '/' ,
+       active: pathname === '/',
+      },
+    { label: 'About Us', href: '/about',
+    active: pathname === '/about' || pathname.startsWith('/about'),
+  },
+    { label: 'Services',href:'/',
+    active: pathname === '/services',
+  },
+    { label: 'Contact', href: '/contact',
+    active: pathname === '/contact',
+  },
+    { label: 'Career', href: '/career',
+    active: pathname === '/career',
+  },
+    { label: 'Blog', href: '/blog',
+    active: pathname === '/blog',
+  },
+
+    
+  ];
+  
+
+ return(
+  <main className="flex flex-row justify-between items-center  md:py-1 z-2 pr-6">
+        
+        <img src="/logo.png" alt="logo"
+        className="w-[100px] h-[100px] object-contain  z-999"/>
+        
+        
+  <div className='lg:flex flex-row items-center gap-9 hidden '>
+  {routes?.map((route) => (
+    <Link key={route.href} 
+    href={route?.href}  className='text-center font-teko text-[20px] leading-[30px] opacity-1 text-slate-950 font-[500] uppercase tracking-[.03em] relative group shallow'>
+    {route.label === 'Services' ? <Services /> : route.label}  
+      <div className={cn ('absolute w-full h-[2px] bg-amber-500 scale-x-0 group-hover:scale-x-100 transition  ease-in-out delay-0 duration-500', route.active && 'scale-x-100')}/>
+      
+      
+    </Link>
+  ))}
+     
+  </div>
+
+        <div className='hidden lg:flex flex-row gap-4 items-center'>
+          <img className='w-[40px] h-[40px] object-contain' src="/contact.png" alt="" />
+          <div className='flex flex-col gap-y-0'>
+            <div className='font-[500] text-[25px] tracking-[.03em] uppercase font-teko leading-[18px] text-slate-900'>
+              for enquiry
+            </div>
+            <div className='font-[400] text-[25px] tracking-[.03em] uppercase  font-teko leading-[24px] text-slate-900'>
+              999 999 9999
+            </div>
+          </div>
+        </div>
+
+        <div className='lg:hidden'>
+              <Mobilenav routes={routes} />
+         </div>
+         
+       
+      </main>
+ )
+  
+  }
+
+
+export default NavbarRoutes
