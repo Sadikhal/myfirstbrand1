@@ -19,7 +19,7 @@ const ServiceIdPage = async ({ params }) => {
    
 
     return (
-        <div className="flex flex-col gap-12 ">
+        <div className="flex flex-col gap-12 overflow-hidden">
             <Banner title={service.title} key={service.title} page='services' active={true} servicePage={service.title}/>
         <div className="lg:mt-20 mt-12 ">
           <div className="flex lg:flex-row  gap-11 flex-col lg:gap-9 xl:gap-14 px-8 lg:mt-1 mt-1 sm:mt-4  ">
