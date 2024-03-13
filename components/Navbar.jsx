@@ -13,24 +13,15 @@ const images = ['/dm6.jpg', 'team1.jpg', '/teams5.jpg','/dm6.jpg', 'team1.jpg', 
 
 
 const NavbarComponent = () => {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000); // Change image every 5 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
+ 
   return (
     <motion.div
-      className="relative w-full h-full"
+      className="relative w-full h-full overflow-hidden"
     >
       <motion.div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 opacity-0 "
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 opacity-0 w-full overflow-hidden"
         style={{ 
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${images[index]})`,
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/contacts10.jpg)',
           filter : 'grayscale(100)',
          
         }}
@@ -44,7 +35,7 @@ const NavbarComponent = () => {
         <Separator className='bg-slate-300 '/>
       </div>
        
-       <div className='flex flex-col justify-center items-center relative px-3 gap-5 h-[70%]'>
+       <div className='flex flex-col justify-center items-center relative px-1 gap-5 h-[70%]'>
         <motion.div
         initial="hidden"
         whileInView="show"

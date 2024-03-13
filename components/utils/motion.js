@@ -10,11 +10,11 @@ export const navVariants = {
     },
   },
   show: {
-    opacity: 2, 
+    opacity: 1, 
     scale: 1.1,
     transition: {
       repeat: Infinity, repeatType: 'mirror', ease: 'linear',
-      duration: 10.0,
+      duration: 8.0,
       // stiffness: 80,
       // type: 'spring'
       // delay: 1,

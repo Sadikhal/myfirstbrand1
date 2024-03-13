@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar'
 import { Separator } from '../ui/separator'
 import NavbarRoutes from './NavbarRoutes'
+import Link from 'next/link'
 
 const Banner = ({title,page, active,servicePage}) => {
   return (
@@ -28,9 +29,9 @@ const Banner = ({title,page, active,servicePage}) => {
       </h1>
       <div className='text-center flex flex-col sm:flex-row gap-3  text-[20px] font-normal font-teko uppercase leading-[30px] tracking-widest items-center '>
        <div className='flex flex-row gap-4 items-center'>
-        <div className='text-[20px] font-[500px font-teko uppercase leading-[30px] tracking-widest'>
+        <Link key='home' href='/' className='text-[20px] font-[500px font-teko uppercase leading-[30px] tracking-widest'>
           home
-        </div>
+        </Link>
          <div className='w-[5px] bg-foreground py-[.9px] mb-[3px]'/>
          <div className='text-[20px] font-[500px font-teko uppercase leading-[30px] tracking-widest'>
            {page}

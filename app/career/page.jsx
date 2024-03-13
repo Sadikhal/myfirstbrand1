@@ -6,7 +6,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <Banner title='OUR openings' page='career'/>
+      <Banner title='our openings' page='career'/>
      <div className='mt-2 py-12'>
       <div className='mt-12 my-12 py-5 flex flex-col justify-center items-center'>
         <div className='text-center'>

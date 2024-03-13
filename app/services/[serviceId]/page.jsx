@@ -1,17 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Banner from "@/components/sections/Banner";
-import NavbarRoutes from "@/components/sections/NavbarRoutes";
 import { servicesDetails } from "@/lib";
-// import {contactForm} from "@/components/sections/contactForm";
 import ContactForm from "@/components/sections/ContactForm";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/sections/ServiceCard";
-import Footer from "@/components/sections/Footer";
-import { Separator } from "@/components/ui/separator";
 import Hero from "@/components/sections/Hero";
 
-// import SimpleSlider from "@/components/sections/Carousel";
 
 
 const ServiceIdPage = async ({ params }) => {

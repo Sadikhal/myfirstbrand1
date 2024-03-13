@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className='flex flex-col gap-12 '>
       <Banner title = "why do we" page ="about us"/>
-      <div className='flex mt-12 gap-12  '>
+      <div className='flex mt-12 gap-12 overflow-hidden '>
         <div className='flex lg:flex-row px-5 flex-col gap-12'>
         <div className='flex flex-col flex-1 px-5'>
           <div className='flex'>

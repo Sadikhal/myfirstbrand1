@@ -9,7 +9,7 @@ import Footer from "./Footer";
 const Mobilenav = ({ routes }) => {
   return (
     <div>
-      <Sheet className="w-full overflow-scroll" >
+      <Sheet className="w-full bg-black" >
         <SheetTrigger>
           <AlignJustify size={40} className="text-[#FC8D00] text-[40px]"/>
         </SheetTrigger>

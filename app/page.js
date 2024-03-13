@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Navbar from '@/components/Navbar'
 import Faqs from "@/components/sections/Faqs";
-import Banner from "@/components/sections/Banner";
 import AboutAgency from "@/components/sections/AboutAgency";
 import CompanyDetails from "@/components/sections/CompanyDetails";
 import IntroBanner from "@/components/sections/IntroBanner";
@@ -12,8 +11,8 @@ import NavbarComponent from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-12 ">
-      <div className="mb-12 h-screen ">
+    <div className="flex flex-col gap-12 w-full">
+      <div className="mb-12 h-screen w-full">
         <NavbarComponent />
       </div>
      
