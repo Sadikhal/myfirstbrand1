@@ -6,7 +6,7 @@ import { Button } from '../ui/button'
 const Footer = () => {
   return (
 
-    <div className='flex flex-col gap-2 text-center'>
+    <div className='flex flex-col gap-2 text-center py-10'>
       <div className='flex justify-center'>
       <img src="/logo.png" alt="logo"
         className="w-[70px] h-[70px] object-contain   opacity-100 z-999"/>
@@ -14,11 +14,11 @@ const Footer = () => {
       <div>
       © copyright 2024 by DigitalMarga Online Services Pvt Ltd. All Rights Reserved
       </div>
-      <div className='flex flex-row gap-2 text-center items-center justify-center'>
+      <div className='flex flex-row gap-2 pt-4 text-center items-center justify-center'>
         {
           social.map((item) =>(
             <Link key={item?.id} href='/'>
-              <Button size = 'logo' className="border rounded-full bg-slate-900 hover:bg-orange-600">
+              <Button size = 'logo' className="border rounded-full bg-slate-900 hover:bg-[#FC8D00]">
                 <img key={social.name}
                 src={item.url}
                 alt={item.name}

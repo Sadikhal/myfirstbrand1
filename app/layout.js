@@ -8,8 +8,8 @@ import { Separator } from "@/components/ui/separator";
 const raleway = Raleway({
   subsets: ["latin"],
   variable: "--raleway",
-  weight: ["100","200","600",'300',"700","500","400"],
-  // display : 'swap'
+  // weight: ["100","200","600",'300',"700","500","400"],
+  
 
 
 });
@@ -17,14 +17,14 @@ const raleway = Raleway({
 const rubik = Rubik({
   subsets: ["latin"],
   variable: "--rubik",
-  weight: ["300","400","600",'300',"700","500"],
-  // display : 'swap'
+  // weight: ["300","400","600",'300',"700","500"],
+  
 });
 const teko = Teko({
   subsets: ["latin"],
   variable: "--teko",
-  weight: ["400","600",'300',"700","500"],
-  // display : 'swap'
+  // weight: ["400","600",'300',"700","500"],
+  
 
 });
 
@@ -40,9 +40,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark">
       
       <body className={` ${rubik.variable} ${raleway.variable} ${teko.variable}`}>{children}
-      <Separator className="w-full"/>
-         <div className="flex items-center justify-center" >
+      <div className="pt-12">
+      <Separator className="w-full "/>
+         <div className="flex items-center justify-center " >
         <Footer/>
+        </div> 
         </div> 
       </body>
       

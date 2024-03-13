@@ -1,4 +1,5 @@
 'use client'
+// import { useForm as useform} from '@formspree/react';
 import { useState } from "react"
 import {
   Form,
@@ -19,15 +20,7 @@ import {budgetItems} from "@/components/constants/FormItems"
 import { servicesDetails } from "@/lib"
 
 const formSchema = z.object({
-  // fullName: z.string().min(1),
-  // images: z.object({ url: z.string() }).array(),
-  // price: z.coerce.number().min(1),
-  // email: z.string().min(1),
-  // number: z.string().min(1),
-  // companyName: z.string().min(1),
-  // service: z.string().min(1),
-
-  // budget: z.string().min(1),
+   
   fullName : z.string().min(2, {
     message: "please complete this required field"
   }),
@@ -59,6 +52,10 @@ export default function contactForm(){
 
       const [loading, setLoading] = useState(false);
 
+      // const [state, handleSubmit] = useform("xpzvlnpr");
+      // if (state.succeeded) {
+      //     return <p>Thanks for joining!</p>;
+      // }
 
       const form = useForm({
         resolver: zodResolver(formSchema),
@@ -88,11 +85,13 @@ return (
           <FormField
             control={form.control}
             name="fullName"
+            id="fullName"
+            type="fullName" 
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="text-foreground">Full Name</FormLabel>
                 <FormControl>
-                  <Input className="rounded-2xl border bg-foreground text-slate-900" disabled={loading} placeholder="" {...field} />
+                  <Input  className="rounded-2xl border bg-foreground text-slate-900" disabled={loading} placeholder="" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -114,6 +113,8 @@ return (
           <FormField
             control={form.control}
             name="number"
+            id="number"
+            type="number" 
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="text-foreground">Whatspp Number</FormLabel>
@@ -127,6 +128,9 @@ return (
           <FormField
             control={form.control}
             name="companyName"
+            id="companyName"
+            type="companyName" 
+            
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="text-foreground">Company Name</FormLabel>
@@ -142,6 +146,8 @@ return (
           <FormField
             control={form.control}
             name="service"
+            id="service"
+            type="service" 
             render={({ field }) => (
               <FormItem className="">
                 <div className="space-y-1 leading-none">
@@ -156,6 +162,8 @@ return (
                   key={item.id}
                   control={form.control}
                   name="service"
+                  id="service"
+                  type="service" 
                   render={({ field }) => {
                     return (
                       <FormItem
@@ -194,6 +202,8 @@ return (
           <FormField
             control={form.control}
             name="budget"
+            id="budget"
+            type="budget" 
             render={({ field }) => (
               <FormItem className="">
                 <div className="space-y-1 leading-none">
@@ -207,7 +217,9 @@ return (
                 <FormField
                   key={item.id}
                   control={form.control}
-                  name="service"
+                  name="budget"
+                  id="budget"
+                  type="budget"
                   render={({ field }) => {
                     return (
                       <FormItem
@@ -245,7 +257,7 @@ return (
           />
           </div>  
         </div>
-        <Button disabled={loading} className="hover:bg-orange-600 ml-auto" type="submit">
+        <Button disabled={loading} className="bg-[#FC8D00]  text-black hover:text-foreground hover:bg-black ml-auto" type="submit">
           Submit
         </Button>
       </form>

@@ -11,7 +11,7 @@ body,
 }
 * { 
   scroll-behavior: smooth;
-  margin: 0;
+  
   padding:0;
  
 }
@@ -91,3 +91,14 @@ body,
     @apply bg-background text-foreground;
   }
 }
+/* 
+.links{
+  @apply bg-black text-foreground relative text-opacity-50 hover:text-foreground h-20 w-80
+}
+.links::before{
+  @apply content-[''] absolute w-[100%] h-[100%] bg-foreground top-0 left-0 scale-x-0 transition-transform ease-in-out origin-right duration-100
+}
+
+.links:hover::before{
+  @apply scale-x-100 origin-left
+} */
