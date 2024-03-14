@@ -8,10 +8,6 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 
 
-
-const images = ['/dm6.jpg', 'team1.jpg', '/teams5.jpg','/dm6.jpg', 'team1.jpg', '/teams5.jpg','/dm6.jpg', 'team1.jpg', '/teams5.jpg', ];
-
-
 const NavbarComponent = () => {
  
   return (
@@ -21,7 +17,7 @@ const NavbarComponent = () => {
       <motion.div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 opacity-0 w-full overflow-hidden"
         style={{ 
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/contacts10.jpg)',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/contacts10.jpg)',
           filter : 'grayscale(100)',
          
         }}

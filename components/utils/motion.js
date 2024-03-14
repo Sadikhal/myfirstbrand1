@@ -14,7 +14,7 @@ export const navVariants = {
     scale: 1.1,
     transition: {
       repeat: Infinity, repeatType: 'mirror', ease: 'linear',
-      duration: 8.0,
+      duration: 4.0,
       // stiffness: 80,
       // type: 'spring'
       // delay: 1,
@@ -25,7 +25,7 @@ export const navVariants = {
 export const navVariant = {
   hidden: {
     opacity: 0,
-    y: 200,
+    y:150,
     transition: {
       type: 'spring',
       stiffness: 300,
@@ -39,7 +39,7 @@ export const navVariant = {
       duration:4,
       type: 'spring',
       stiffness: 80,
-      delay: 3.5,
+      delay: 2.5,
     },
   },
 };
@@ -58,7 +58,7 @@ export const textVariant = {
     opacity: 1,
     y: 0,
     transition: {
-      duration:2.5,
+      duration:2,
       type: 'spring',
       stiffness: 80,
       delay: .4,
