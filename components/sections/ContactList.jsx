@@ -47,8 +47,8 @@ const ContactList = () => {
 
 
 
-          <div className='flex-1 flex justify-center items-center mt-10 lg:mt-0'>
-            <div className='text-left flex flex-col gap-3'>
+          <div className='flex-1 flex justify-center items-center mt-10 lg:mt-0 '>
+            <div className='text-left flex flex-col gap-3 '>
               <ContactCard icon={<MapPin />} content='Jayanagar, Bangalore.' href='https://maps.app.goo.gl/rq6NNmw2b4KuN9PTA' />
               <ContactCard icon={<Mail />} content='Info@mybrandfirst.com' href="mailto:Info@mybrandfirst.com" />
               <ContactCard icon={<Phone />} content='+91 91130 33835' href="tel:+919113033835"/>

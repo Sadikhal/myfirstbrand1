@@ -6,11 +6,11 @@ import { Button } from '../ui/button';
 
 const IntroBanner = () => {
   return (
-    <div className='px-7 mt-12'>
-       <div className='flex  flex-col lg:flex-row gap-12'>
-        <div className='flex-1 '>
-          <div className='px-7 relative'>
-          <img src="class6.jpg" className='object-cover h-auto w-full border rounded-xl grayscale-[89%] hover:grayscale-0 ' alt="banner" />
+    <div className='px-7 h-full'>
+       <div className='flex  flex-col lg:flex-row gap-12 h-full'>
+        <div className='lg:flex-1 h-full '>
+          <div className='sm:px-7  relative h-full'>
+          <img src="/class6.jpg" className='object-cover lg:h-auto md:h-screen sm:h-full  w-full  rounded-xl grayscale-[89%] hover:grayscale-0 min-h-[380px] ' alt="banner" />
           <div className='flex absolute w-80 bottom-0 left-0 bg-[#FC8D00] rounded-lg flex-row justify-around items-center sm:py-5 sm:px-5 py-1 px-2 '>
           <div className=' text-slate-900  text-[30px] font-normal font-teko leading-[1em] uppercase '>
           Believe in the best to do the best
@@ -26,7 +26,7 @@ const IntroBanner = () => {
           </div>
           
         </div>
-        <div className='flex-1 px-1 pl-2 pt-4'>
+        <div className='lg:flex-1 px-1 pl-2 pt-4'>
        <div className='font-rubik text-[16px] font-normal leading-[2.125em] '>
        Welcome to world where innovation meets strategy to propel your brand into
 the digital spotlight. As a premier digital marketing agency, we specialize in crafting

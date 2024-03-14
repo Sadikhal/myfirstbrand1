@@ -23,7 +23,7 @@ import Link from "next/link"
 
 export function ContactCard({icon,content,href}) {
   return (
-    <Card className=" bg-white/50 text-black backdrop-opacity-10 backdrop-invert flex flex-row item-center h-20 p-12 lg:mt-0 mt-4 ">
+    <Card className=" bg-white/50 text-black backdrop-opacity-10 backdrop-invert flex flex-row item-center h-20 p-12 lg:mt-0 mt-4 px-2 sm:px-0">
       
       <CardContent className="text-left ">       
             <div className="flex flex-row gap-5 text-left pt-2 ">

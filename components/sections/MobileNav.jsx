@@ -9,12 +9,12 @@ import Footer from "./Footer";
 const Mobilenav = ({ routes }) => {
   return (
     <div>
-      <Sheet className="w-full bg-black" >
+      <Sheet className="w-full" >
         <SheetTrigger>
           <AlignJustify size={40} className="text-[#FC8D00] text-[40px]"/>
         </SheetTrigger>
-        <SheetContent className="flex flex-col items-start justify-center gap-12 " side = "left">
-          <div className="flex flex-col gap-8 px-3 mt- py-">
+        <SheetContent className="flex flex-col items-start justify-center gap-12 bg-slate-900 " side = "left">
+          <div className="flex flex-col gap-8 px-3 ">
             {routes.map((route) => (
               <div             
               >

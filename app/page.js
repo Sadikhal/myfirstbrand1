@@ -16,10 +16,10 @@ export default function Home() {
         <NavbarComponent />
       </div>
      
-      <div className="py-2 pt-12">
+      <div className="pt-4 md:pt-8 h-full ">
         <IntroBanner/>
       </div>
-      <div className="px-10 ">
+      <div className="px-10 pt-5 ">
         <SliderMotion/>
       </div>
       <div className=" py-18 mt-12 relative  ">
