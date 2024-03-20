@@ -9,7 +9,7 @@ const Footer = () => {
       <div className='flex justify-center'>
         <img src="/logo.png" alt="logo" className="w-[70px] h-[70px] object-contain opacity-100 z-999" />
       </div>
-      <div>© copyright 2024 by DigitalMarga Online Services Pvt Ltd. All Rights Reserved</div>
+      <div className='px-4 sm:px-1'>© copyright 2024 by DigitalMarga Online Services Pvt Ltd. All Rights Reserved</div>
       <div className='flex flex-row gap-2 pt-4 text-center items-center justify-center'>
         {social.map((item) => (
           <Link key={item?.id} href='/' passHref>

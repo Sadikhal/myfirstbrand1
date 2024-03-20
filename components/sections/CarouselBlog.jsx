@@ -59,18 +59,18 @@ const CarouselBlog = () => {
                   <h1>imporatnce of digital marketing in today's world</h1>
                 </div>
 
-                <Link key='/blog/252' href='/blog/252' className='leading-[24.6px] font-open_sans  cursor-pointer text-foreground hover:text-[#FC8D00] '>
+                <Link key='/blog/252' href='/blog/252' className='leading-[24.6px] font-open_sans  cursor-pointer text-foreground hover:text-[#FC8D00] hidden md:block'>
                 <p>Digital marketing has become increasingly crucial in today's world due to the widespread use of the internet and digital devices.Digital marketing is a dynamic and essential component of modern business strategies...</p>
                 </Link>
 
-                <Link key='/blog/252' href='/blog/252' className='hidden md:block text-[15px] font-open_sans py-8 '>
+                <Link key='/blog/252' href='/blog/252' className='block text-[15px] font-open_sans py-8 '>
                   <Button className="bg-transparent border-[1.5px] text-foreground uppercase font-[700] tracking-[3px] px-6 py-6 hover:bg-transparent rounded-none hover:text-[#FC8D00] hover:border-[#FC8D00] hover:border-1 border-foreground">
                     Read More
                   </Button>
                 </Link>
 
-                <div className='font-raleway text-[15px] pt-3'>
-                  Dec, 12 2012
+                <div className='font-raleway text-[15px] sm:pt-3 pb-4 md:pb-0'>
+                  March 19, 2024
                 </div>
           </div>
 
@@ -84,7 +84,7 @@ const CarouselBlog = () => {
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer transition-all'>
         <ChevronRight onClick={nextSlide} size={30} />
       </div>
-      <div className='flex top-5 -mt-10 justify-center py-2'>
+      <div className='flex top-5 -mt-10 justify-center md:py-3 py-4'>
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
