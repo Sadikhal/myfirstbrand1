@@ -20,7 +20,6 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useToast } from '../ui/use-toast';
-import { Button as button } from '../ui/button';
 import { useRouter } from 'next/navigation';
 
  

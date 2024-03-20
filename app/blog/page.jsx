@@ -28,9 +28,7 @@ const page = () => {
         <BlogCard2 />
         <BlogCard /> 
         <BlogCard3/>
-
         </div>
-       
       </div>
       </div>
     </div>

@@ -10,10 +10,7 @@ const CarouselBlog = () => {
     {
       url: '/blog/blog501.jpg',
     },
-   
-    // {
-    //   url: '/blog/blog502.png',
-    // },
+
    
     {
       url: '/blog/blog503.jpg',
