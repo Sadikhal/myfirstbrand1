@@ -16,8 +16,8 @@ const BlogPage = ({ blog }) => {
               {blog.category}
             </Link>
 
-            <div className='text-center'>
-              <h2 className='text-foreground leading-[44px] text-[40px] font-normal font-playfair_display tracking-[.5px] capitalize '>
+            <div className=' text-center items-center'>
+              <h2 className='text-foreground leading-[50px] text-[40px] font-normal font-playfair_display tracking-[.5px] capitalize '>
                 {blog.heading}
               </h2>
             </div>
@@ -25,20 +25,21 @@ const BlogPage = ({ blog }) => {
               {blog.date}
             </div>
             <div className='flex flex-col gap-4'>
-              <div className='text-[15px] text-[#c4c4c4] font-open_sans tracking-0 leading-[24.6px] first-letter:font-playfair_display' >
-                <p className='first-letter:text-7xl first-letter:font-[400] first-letter:text-white first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 text-justify md:ml-5 xl:ml-5 md:mr-3 lg:mr-0'>
+              <div className='text-[15px] text-[#c4c4c4] font-open_sans first-letter:font-playfair_display' >
+                <p className='first-letter:text-7xl first-letter:font-[400] first-letter:text-white first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 text-justify md:ml-5 xl:ml-5 md:mr-3 lg:mr-0 tracking-wide leading-[32.6px]'>
                   {blog.introduction} :
                 </p>
               </div>
               {blog.desc.map((item) => (
                 <div key={item.id} className='gap-4 flex flex-col mt-5'>
-                  <div className='text-[24px] text-slate-50 font-open_sans tracking-0 leading-[24.6px] w-full  '>
+                  <div className='text-[24px] text-slate-50 font-open_sans tracking-wide leading-[32.6px] w-full  '>
                     <strong className='text-left font-playfair_display'>
                       {item.title}
                     </strong>
                   </div>
                   <div>
-                    <p className='text-[15px] text-[#c4c4c4] font-open_sans tracking-0 leading-[24.6px] text-justify'>
+                    <p className='text-[15px] text-[#c4c4c4] font-open_sans tracking-wide leading-[32.6px]
+                    text-justify'>
                       {item.description}
                     </p>
                   </div>

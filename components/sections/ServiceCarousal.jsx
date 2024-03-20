@@ -12,7 +12,7 @@ const ServiceCarousal = () => {
       <div className='justify-between flex flex-row text-center gap-12  font-playfair_display px-3 '>
       {servicesDetails.map((item) => (
         <Link key={item.id} href={`/services/${item.id}`} shallow className='cursor-pointer text-center  hover:text-[#FC8D00] flex items-center flex-nowrap text-nowrap'>
-          <div className='font-medium sm:text-[18px] text-[17px] text-nowrap flex-nowrap whitespace-nowrap'>
+          <div className='font-medium sm:text-[18px] tracking-wide text-[17px] text-nowrap flex-nowrap whitespace-nowrap'>
             {item.title}
           </div>
         </Link>

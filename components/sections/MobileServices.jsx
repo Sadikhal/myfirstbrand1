@@ -13,8 +13,8 @@ import { ChevronDown } from "lucide-react";
 export function MobileServices() {
   return (
     <Select>
-      <SelectTrigger className="w-[180px] flex flex-row">
-        <div className="text-left font-teko text-[20px] leading-[24px] text-foreground font-[500] uppercase tracking-[1px] underline">Services</div>
+      <SelectTrigger className=" flex flex-row">
+        <div className="text-left font-teko text-[20px] leading-[24px] text-foreground font-[500] uppercase tracking-[1px] underline hover:text-[#FC8D00]">Services</div>
         <ChevronDown className="data-[state=open]:rotate-180" />
       </SelectTrigger>
       <SelectContent>
