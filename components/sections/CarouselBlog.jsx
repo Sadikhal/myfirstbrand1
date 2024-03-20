@@ -53,10 +53,10 @@ const CarouselBlog = () => {
                 </div>
 
                 <div className='text-[36px] leading-[44px] font-playfair_display tracking-[1px] capitalize py-5 cursor-pointer text-foreground hover:text-[#FC8D00] font-[700] z-1 opacity-100'>
-                  <h1>imporatnce of digital marketing in today's world</h1>
+                  <h1>importance of digital marketing in today's world</h1>
                 </div>
 
-                <Link key='/blog/252' href='/blog/252' className='tracking-wide leading-[25.6px] font-open_sans  cursor-pointer text-foreground hover:text-[#FC8D00] hidden md:block text-[15px]'>
+                <Link key='/blog/252' href='/blog/252' className='tracking- leading-[25.6px] font-open_sans  cursor-pointer text-foreground hover:text-[#FC8D00] hidden md:block text-[15px]'>
                 <p>Digital marketing has become increasingly crucial in today's world due to the widespread use of the internet and digital devices.Digital marketing is a dynamic and essential component of modern business strategies...</p>
                 </Link>
 

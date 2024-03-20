@@ -25,8 +25,8 @@ const BlogPage = ({ blog }) => {
               {blog.date}
             </div>
             <div className='flex flex-col gap-4'>
-              <div className='text-[15px] text-[#c4c4c4] font-open_sans first-letter:font-playfair_display' >
-                <p className='first-letter:text-7xl first-letter:font-[400] first-letter:text-white first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 text-justify md:ml-5 xl:ml-5 md:mr-3 lg:mr-0 tracking-wide leading-[32.6px]'>
+              <div className='text-[16px] text-[#c4c4c4] font-open_sans first-letter:font-playfair_display' >
+                <p className='first-letter:text-7xl first-letter:font-[400] first-letter:text-white first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 text-justify md:ml-5 xl:ml-5 md:mr-3 lg:mr-0 font-rubik  leading-[2.1em] tracking-0'>
                   {blog.introduction} :
                 </p>
               </div>
@@ -38,7 +38,7 @@ const BlogPage = ({ blog }) => {
                     </strong>
                   </div>
                   <div>
-                    <p className='text-[15px] text-[#c4c4c4] font-open_sans tracking-wide leading-[32.6px]
+                    <p className='text-[16px] text-[#c4c4c4] tracking-0 font-rubik  leading-[2.1em] tracking-0]
                     text-justify'>
                       {item.description}
                     </p>

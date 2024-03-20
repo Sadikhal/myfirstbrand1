@@ -23,8 +23,8 @@ const BlogBanner = ({item}) => {
               </div>
 
               <div >
-                <p className='text-[15px] text-[#c4c4c4] font-open_sans tracking-wide leading-[32.6px] first-letter:text-7xl first-letter:font-[400] first-letter:text-white
-  first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 text-justify '>
+                <p className='text-[16px] text-[#c4c4c4]  font-rubik  leading-[2.1em] first-letter:text-7xl first-letter:font-[400] first-letter:text-white
+  first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 text-justify tracking-0 '>
                 {item.introduction} ....
                 </p>
               </div>
