@@ -2,7 +2,7 @@ export const blogNotes = [
   {id: 254,
     category: 'digital marketing',
     date: 'March 19, 2024',
-    heading :"Imporatnce of digital marketing in today's world",
+    heading :"Importance of digital marketing in today's world",
     img : '/blog/blog4.jpg',
     introduction : "Digital marketing has become increasingly crucial in today's world due to the widespread use of the internet and digital devices.Digital marketing is a dynamic and essential component of modern business strategies.In today’s interconnected world, embracing digital strategies is not just an option—it’s a necessity for sustained growth and success. Let’s delve into the importance of digital marketing, Here are some key reasons why digital marketing is important",
     desc :[{
