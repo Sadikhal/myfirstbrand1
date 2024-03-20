@@ -7,8 +7,8 @@ import Link from 'next/link';
 const BlogCard2 = ({ service, title }) => {
   return (
     <div>
-      <Card className="w-full bg-transparent border-none ">
-        <CardHeader className='pt-10 mt-3'>
+      <Card className="w-full bg-transparent border-none  ">
+        <CardHeader className='pt-10 '>
           <CardTitle className="flex flex-row items-center w-full lg:gap-3 gap-4">
             <div className='flex-[.7] lg:flex-[.3]'>
             <Separator className="text-slate-500 w-full"/>

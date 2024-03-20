@@ -13,7 +13,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className=''>
       <BlogNav/>
       <ServiceCarousal/>
       <CarouselBlog/>
@@ -23,8 +23,8 @@ const page = () => {
           <BlogBanner item={item} key={item.id}/>
         ))}
       </div>
-      <div className='flex-[.4]  h-min sm:px-12 lg:px-0 sm:mx-12 lg:mx-0  '>
-        <div className='w-full sticky top-30 '>
+      <div className='flex-[.4] sm:px-12 lg:px-0 sm:mx-12 lg:mx-0 '>
+        <div className='w-full  '>
         <BlogCard2 />
         <BlogCard /> 
         <BlogCard3/>

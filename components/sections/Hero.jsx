@@ -15,7 +15,7 @@ const Hero = () => {
           </div>
           <div className='lg:flex-[0.8] text-right'>
             <Link href='/contact'>
-              <Button size='hero' className='font-teko leading-30 font-normal text-18 tracking-widest text-foreground bg-black hover:text-black hover:bg-foreground'>
+              <Button size='hero' className='font-teko leading-30 font-normal text-[25px] tracking-normal text-foreground bg-black hover:text-black hover:bg-foreground uppercase'>
                 contact us
               </Button>
             </Link>

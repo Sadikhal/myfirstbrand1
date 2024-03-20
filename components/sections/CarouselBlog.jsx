@@ -19,7 +19,7 @@ const CarouselBlog = () => {
       url: '/blog/blog503.jpg',
     },
     {
-      url: 'blog/blog9.avif',
+      url: 'blog/blog508.jpg',
     },
    
   
@@ -47,7 +47,7 @@ const CarouselBlog = () => {
     <div  className='lg:h-[650px] h-full w-full   relative group'>
       <div
         style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${slides[currentIndex].url})` }}
-        className='w-full sm:h-[440px]  md:h-[500px] lg:h-screen  bg-center bg-cover duration-500 h-[380px] '
+        className='w-full sm:h-[440px]  md:h-[500px] lg:h-screen max-h-[600px] bg-center bg-cover duration-500 h-[380px] '
       >
         <div className='flex justify-center h-full items-center '>
           <div className='text-center gap-12 sm:w-4/5 px-3 sm:px-0'>

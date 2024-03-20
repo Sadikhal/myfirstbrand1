@@ -19,12 +19,13 @@ const NavbarRoutes = () => {
 
   return (
     <main className="flex flex-row justify-between items-center z-2 pr-6">
+      <Link key='img' href='/'>
       <img
         src="/logo.png"
         alt="logo"
         className="w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] object-contain z-999 opacity-8"
       />
-
+     </Link>
       <div className="lg:flex flex-row items-center gap-9 hidden">
         {routes?.map((route) => (
           <Link

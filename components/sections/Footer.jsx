@@ -12,7 +12,7 @@ const Footer = () => {
       <div className='px-4 sm:px-1'>© copyright 2024 by DigitalMarga Online Services Pvt Ltd. All Rights Reserved</div>
       <div className='flex flex-row gap-2 pt-4 text-center items-center justify-center'>
         {social.map((item) => (
-          <Link key={item?.id} href='/' passHref>
+          <Link key={item?.id} href={item.href} passHref>
             <Button size='logo' className="border rounded-full bg-slate-900 hover:bg-[#FC8D00]">
               <img key={item.name} src={item.url} alt={item.name} className="w-[18px] h-[22px] object-contain cursor-pointer" />
             </Button>

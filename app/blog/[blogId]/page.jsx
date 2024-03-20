@@ -14,7 +14,7 @@ const page = async ({params}) => {
 
   const blog= blogNotes.find(blog => blog.id === 254);
   return (
-    <div>
+    <div className='w-full '>
         <BlogNav />
         <ServiceCarousal/>
         <div className=''>

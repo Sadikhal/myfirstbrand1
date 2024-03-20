@@ -15,7 +15,7 @@ const BlogCard3 = ({ service, title }) => {
             <Separator className="text-slate-500 w-full"/>
             </div>
             <div className='flex justify-center items-center flex-[.2] lg:flex-[.8]'>
-            <h2 className="font-playfair_display leading-[24px] text-[#ffffff] text-[16px]  font-normal tracking-[2px] uppercase text-center text-nowrap">Recent Posts</h2>
+            <h2 className="font-playfair_display leading-[24px] text-[#ffffff] text-[16px]  font-normal tracking-[2px] uppercase text-center text-nowrap whitespace-nowrap">Recent Posts</h2>
             </div>
             <Separator className="text-slate-500 flex-[.7] lg:flex-[.3]"/>
           </CardTitle>
