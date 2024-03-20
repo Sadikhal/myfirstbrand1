@@ -56,7 +56,7 @@ const CarouselBlog = () => {
                   <h1>imporatnce of digital marketing in today's world</h1>
                 </div>
 
-                <Link key='/blog/252' href='/blog/252' className='leading-[24.6px] font-open_sans  cursor-pointer text-foreground hover:text-[#FC8D00] hidden md:block'>
+                <Link key='/blog/252' href='/blog/252' className='tracking-wide leading-[25.6px] font-open_sans  cursor-pointer text-foreground hover:text-[#FC8D00] hidden md:block text-[15px]'>
                 <p>Digital marketing has become increasingly crucial in today's world due to the widespread use of the internet and digital devices.Digital marketing is a dynamic and essential component of modern business strategies...</p>
                 </Link>
 

@@ -17,7 +17,7 @@ const BlogPage = ({ blog }) => {
             </Link>
 
             <div className=' text-center items-center'>
-              <h2 className='text-foreground leading-[50px] text-[40px] font-normal font-playfair_display tracking-[.5px] capitalize '>
+              <h2 className='text-foreground leading-[50px] text-[40px] font-normal font-playfair_display tracking-[.8px] capitalize md:tracking-wide'>
                 {blog.heading}
               </h2>
             </div>

@@ -13,8 +13,8 @@ const BlogBanner = ({item}) => {
                { item.category}
               </Link>
 
-              <div className='text-center'>
-                <h2 className='text-foreground leading-[44px] text-[40px] font-normal font-playfair_display tracking-[.5px] capitalize '>
+              <div className='text-center xl:px-2'>
+                <h2 className='text-foreground leading-[44px] text-[40px] font-normal font-playfair_display tracking-[.8px] capitalize md:tracking-wide'>
                {item.heading}
                 </h2>
               </div>
