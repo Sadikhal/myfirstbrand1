@@ -4,7 +4,7 @@ export const servicesDetails = [
       title : "Website Development",
       href  : "services/1",
       value : 90,
-        desc : `At Mybrandfirst, we understand that your website is the digital storefront of your business
+        desc : <div>At Mybrandfirst, we understand that your website is the digital storefront of your business
 – it's the first impression you make on potential customers in the online world. That's why
 we're dedicated to crafting bespoke websites that not only captivate your audience but also
 drive meaningful interactions and conversions.
@@ -12,6 +12,8 @@ Our website development services are built on the foundation of creativity, func
 and user experience. Whether you're looking to launch a brand-new website or revamp
 your existing one, our team of skilled developers will work closely with you to bring your
 vision to life.
+<br/>
+<br/>
 From responsive design that ensures seamless viewing across all devices to intuitive
 navigation that enhances user engagement, we prioritize every aspect of your website to
 deliver an unparalleled online experience. We understand the importance of striking the
@@ -22,13 +24,15 @@ enterprise in need of a complex, feature-rich web application, we have the exper
 experience to deliver results that exceed your expectations. Our websites are not just
 visually stunning; they're also optimized for performance, security, and scalability, ensuring
 that your online presence remains robust and reliable as your business grows.
+<br/>
+<br/>
 But our commitment doesn't end once your website goes live. We provide ongoing support
 and maintenance to ensure that your website stays up-to-date, secure, and performing at
 its best. Whether you need regular updates, troubleshooting assistance, or strategic
 guidance to enhance your online presence, we're here to help every step of the way.
 So if you're ready to take your online presence to the next level, let's collaborate to create a
 website that reflects the essence of your brand and resonates with your target audience.
-Get in touch with us today, and let's turn your digital vision into reality.`
+Get in touch with us today, and let's turn your digital vision into reality.</div>
 
 
 
@@ -38,10 +42,12 @@ Get in touch with us today, and let's turn your digital vision into reality.`
   title : "Social Media Marketing ",
   href  : "services/2",
   value : 95,
-  desc : `In today&#39;s digital age, social media has become a powerhouse for businesses to connect
+  desc :  <div>In today&#39;s digital age, social media has become a powerhouse for businesses to connect
   with their audience, build brand awareness, and drive meaningful engagement. At
   Mybrandfirst, we specialize in leveraging the power of social media to elevate your brand to
   new heights.
+  <br/>
+<br/>
   Our social media marketing services are designed to help you stand out in a crowded digital
   landscape, foster genuine connections with your audience, and drive tangible results for
   your business. Whether you&#39;re looking to increase followers, boost website traffic, generate
@@ -53,6 +59,8 @@ Get in touch with us today, and let's turn your digital vision into reality.`
   abreast of the latest trends and algorithm updates across all major social media platforms,
   allowing us to adapt our strategies and tactics in real-time to keep your brand ahead of the
   curve.
+  <br/>
+<br/>
   But our social media marketing services go beyond just posting content and running ads. We
   believe in fostering genuine engagement and building meaningful relationships with your
   audience. That&#39;s why we prioritize community management, actively engaging with your
@@ -63,22 +71,26 @@ Get in touch with us today, and let's turn your digital vision into reality.`
   of your social media campaigns and measure key metrics such as reach, engagement, and
   conversions. This data-driven approach allows us to continuously optimize and refine our
   strategies to ensure maximum effectiveness and ROI.
+  <br/>
+<br/>
   Whether you&#39;re a small business looking to establish a presence on social media or a large
   enterprise seeking to take your social media marketing efforts to the next level, we have the
   expertise and experience to help you achieve your goals. Let&#39;s work together to unlock the
   full potential of social media for your brand. Get in touch with us today to learn more about
-  our social media marketing services and how we can help you succeed in the digital world.`
+  our social media marketing services and how we can help you succeed in the digital world.</div>
 
   },
   {   id  : '3',
   title : "Paid Advertisement",
   href  : "services/3",
   value :91,
-  desc  : `In a highly competitive digital landscape, paid advertising is an indispensable tool for
+  desc  : <div> In a highly competitive digital landscape, paid advertising is an indispensable tool for
   businesses looking to cut through the noise, reach their target audience, and drive tangible
   results. At [Your Agency Name], we specialize in delivering strategic, results-driven paid
   advertising campaigns that help our clients achieve their business objectives and maximize
   their return on investment.
+  <br/>
+<br/>
   Our paid advertising services encompass a wide range of platforms, including search
   engines, social media networks, display networks, and more. Whether you&#39;re looking to
   increase website traffic, generate leads, boost sales, or enhance brand visibility, our team of
@@ -93,11 +105,13 @@ Get in touch with us today, and let's turn your digital vision into reality.`
   ROI, and provide actionable insights for future campaigns. We believe in transparency and
   collaboration, and we work closely with our clients to ensure that their paid advertising
   efforts are aligned with their overall business objectives.
+  <br/>
+<br/>
   Whether you&#39;re a small business looking to dip your toes into the world of paid advertising
   or a large enterprise seeking to scale your existing campaigns, we have the expertise and
   experience to help you achieve your goals. Let&#39;s work together to unlock the full potential of
   paid advertising for your brand. Get in touch with us today to learn more about our paid
-  advertising services and how we can help you succeed in the digital marketplace.`
+  advertising services and how we can help you succeed in the digital marketplace.</div>
   },
   {   id  : '4',
   title : "Video Production",

@@ -1,267 +1,280 @@
-'use client'
-// import { useForm as useform} from '@formspree/react';
-import { useState } from "react"
+
+'use client';
+
+import { ToastAction } from "@/components/ui/toast"
+import { useToast } from "@/components/ui/use-toast"
+import { servicesDetails } from "@/lib/serviceDetails";
 import {
-  Form,
+
+  Button,
+  ChakraProvider,
+  Checkbox,
+  CheckboxGroup,
   FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
+  FormErrorMessage,
   FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { Checkbox } from "../ui/checkbox"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import { z } from "zod"
-import { Button } from "@/components/ui/button"
-import {budgetItems} from "@/components/constants/FormItems"
-import { servicesDetails } from "@/lib"
-
-const formSchema = z.object({
-   
-  fullName : z.string().min(2, {
-    message: "please complete this required field"
-  }),
-  email: z.string().min(2, {
-      message: "please complete this required field",
-      
-  }),
-  number: z.string().min(2, {
-    message: "please complete this required field",
-    
-}),
-companyName: z.string().min(2, {
-  message: "please complete this required field",
+  Heading,
+  Input,
+  Stack,
+  Text,
+  Textarea,
   
-}),
-service: z.string().min(2, {
-  message: "please complete this required field",
   
-}),
-budget: z.string().min(2, {
-  message: "please complete this required field",
-  
-}),
-  
-});
+} from "@chakra-ui/react";
+import { useState } from "react";
+import { budgetItems } from "../constants/FormItems";
+
+const initValues = { fullName: "" ,email: "", mobile: "", company: "", service: [] ,budget:[]};
+
+const initState = { isLoading: false, error: "", values: initValues };
+const HomePage = () => {
 
 
-export default function contactForm(){
+  const { toast } = useToast()
 
-      const [loading, setLoading] = useState(false);
+  const [state, setState] = useState(initState);
+  const [touched, setTouched] = useState({});
 
-      // const [state, handleSubmit] = useform("xpzvlnpr");
-      // if (state.succeeded) {
-      //     return <p>Thanks for joining!</p>;
-      // }
+  const { values, isLoading, error } = state;
 
-      const form = useForm({
-        resolver: zodResolver(formSchema),
-        defaultValues: {
-          fullName: "",
-          email: "",
-          number: "",
-          companyName: "",
-          service: "",
-          budget: "",
-        },
+  const onBlur = ({ target }) => setTouched((prev) => ({ ...prev, [target.name]: true }));
+
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
+  const handleCheckboxChange = (name, isChecked) => {
+    const newCheckboxValues = isChecked
+      ? [...values.service, name]
+      : values.service.filter((item) => item !== name);
+
+    handleChange({ target: { name: "service", value: newCheckboxValues } });
+  };
+  const handleCheckboxBudget = (name, isChecked) => {
+    const newCheckboxValues = isChecked
+      ? [...values.budget, name]
+      : values.service.filter((item) => item !== name);
+
+    handleChange({ target: { name: "budget", value: newCheckboxValues } });
+  };
+
+  const onSubmit = async (e) => {
+    if (!values.fullName || !values.email || !values.mobile || !values.company || values.service.length === 0 || values.budget.length === 0) {
+     ;
+      toast({
+        variant: "destructive",
+        description: "Please complete all required fields.",
       })
-      const onSubmit = () => {
-        // Handle form submission logic here
-        console.log('mmmm');
+      return;
+    }
+    setState((prev) => ({
+      ...prev,
+      isLoading: true,
+    }));
+
+    // send email
+    try {
+      const response = await fetch("api/contact-us", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      const { success, error } = await response.json();
+
+      if (success) {
+        toast({
+          variant: "primary",
+          title: "Your message has been sent.",
+          description: "Thank you for your enquiry, we will contact soon",
+         
+        })
+       
+        console.log(values)
+      } else if (error) {
+        console.error(error);
+        alert("something went wrong, please check your connection");
+        toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "There was a problem with your request.",
+          action: <ToastAction altText="Try again">Try again</ToastAction>,
+        })
       }
+    } catch (error) {
+      console.error(error);
+      toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem with your request.",
+        action: <ToastAction altText="Try again">Try again</ToastAction>,
+      })
+      alert("something went wrong, please check your connection"); // Corrected concatenation
+    } finally {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+      }));
+    }
+  };
 
-
-
-return (
-  <>
-    <Form  
-    {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full leading-[20px] font-raleway font-medium text-[15px]">
-        
-        <div className="flex flex-col gap-4">
-          <FormField
-            control={form.control}
+  return (
+    <div className="space-y-8 w-full leading-[20px] font-raleway font-medium text-[15px] pt-9">
+      {error && (
+        <Text color="red.300" my={4} fontSize="xl">
+          {error}
+        </Text>
+      )}
+      <div className="flex flex-col gap-4 w-full">
+        <FormControl isRequired isInvalid={touched.fullName && !values.fullName}>
+          <FormLabel className="text-foreground">Full Name</FormLabel>
+          <Input
+            className="rounded-2xl border w-full py-[10px] bg-foreground mt-2 text-slate-900 px-3"
+            disabled={isLoading}
+            type="text"
             name="fullName"
-            id="fullName"
-            type="fullName" 
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-foreground">Full Name</FormLabel>
-                <FormControl>
-                  <Input  className="rounded-2xl border bg-foreground text-slate-900" disabled={loading} placeholder="" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+            errorBorderColor="red.300"
+            value={values.fullName}
+            onChange={handleChange}
+            onBlur={onBlur}
+            required
           />
-          <FormField
-            control={form.control}
+          <FormErrorMessage className="text-red-800">Please complete this required field. </FormErrorMessage>
+        </FormControl>
+
+        <FormControl isRequired isInvalid={touched.email && !values.email} mb={5}>
+          <FormLabel className="text-foreground">Email</FormLabel>
+          <Input
+            className="rounded-2xl border bg-foreground text-slate-900 w-full py-[10px] px-3 mt-2"
+            disabled={isLoading}
+            type="email"
             name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-foreground">Email</FormLabel>
-                <FormControl>
-                  <Input className="rounded-2xl border bg-foreground text-slate-900" disabled={loading}  {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
+            errorBorderColor="red.300"
+            value={values.email}
+            onChange={handleChange}
+            onBlur={onBlur}
+            required
           />
-          <FormField
-            control={form.control}
-            name="number"
-            id="number"
-            type="number" 
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-foreground">Whatspp Number</FormLabel>
-                <FormControl>
-                  <Input className="rounded-2xl border bg-foreground text-slate-900" type="number" disabled={loading} {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="companyName"
-            id="companyName"
-            type="companyName" 
-            
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-foreground">Company Name</FormLabel>
-                <FormControl>
-                  <Input className="rounded-2xl border bg-foreground text-slate-900" disabled={loading} {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          
-        <div className=" flex flex-row gap-10">
-          <FormField
-            control={form.control}
-            name="service"
-            id="service"
-            type="service" 
-            render={({ field }) => (
-              <FormItem className="">
-                <div className="space-y-1 leading-none">
-                  <FormLabel className="text-foreground">
-                    Select Service
-                  </FormLabel>
-                  
-                </div>
+          <FormErrorMessage className="text-red-800">Please complete this required field. </FormErrorMessage>
+        </FormControl>
 
+        <FormControl isRequired isInvalid={touched.mobile && !values.mobile} mb={5}>
+          <FormLabel className="text-foreground">Mobile Number</FormLabel>
+          <Input
+            className="rounded-2xl border bg-foreground text-slate-900 w-full py-[10px] px-3 mt-2"
+            disabled={isLoading}
+            type="tel"
+            pattern="[0-9]{10}"
+            name="mobile"
+            errorBorderColor="red.300"
+            value={values.mobile}
+            onChange={handleChange}
+            onBlur={onBlur}
+            required
+            maxLength={10}
+           
+          />
+          <FormErrorMessage className="text-red-800">Please complete this required field. </FormErrorMessage>
+        </FormControl>
+
+        <FormControl isRequired isInvalid={touched.company && !values.company} mb={5}>
+          <FormLabel className="text-foreground">Company Name</FormLabel>
+          <Input
+            className="rounded-2xl border bg-foreground text-slate-900 w-full py-[10px] mt-2 px-3"
+            disabled={isLoading}
+            type="text"
+            name="company"
+            errorBorderColor="red.300"
+            value={values.company}
+            onChange={handleChange}
+            onBlur={onBlur}
+            required
+          />
+          <FormErrorMessage className="text-red-800">Please complete this required field. </FormErrorMessage>
+        </FormControl>
+        <div className="flex flex-row lg:gap-10  gap-12 ">
+          <FormControl mb={5} isInvalid={touched.service && !values.service}>
+            <FormLabel>Select Services</FormLabel>
+            <CheckboxGroup  
+            className=""
+            required
+              value={values.service}
+              onChange={(newValues) => handleChange({ target: { name: "service", value: newValues } })}
+            >
+              <Stack  className="flex flec-col text-white border-1 border-slate-100 pt-4 " iconColor='blue.400'>
                 {servicesDetails.map((item) => (
-                <FormField
-                  key={item.id}
-                  control={form.control}
-                  name="service"
-                  id="service"
-                  type="service" 
-                  render={({ field }) => {
-                    return (
-                      <FormItem
-                        key={item.id}
-                        className="flex  items-start space-x-3 space-y-0"
-                      >
-                        <FormControl>
-                          <Checkbox className="bg-foreground text-slate-900"
-                            checked={field.value?.includes(item.id)}
-                            onCheckedChange={(checked) => {
-                              return checked
-                                ? field.onChange([...field.value, item.id])
-                                : field.onChange(
-                                    field.value?.filter(
-                                      (value) => value !== item.id
-                                    )
-                                  )
-                            }}
-                          />
-                        </FormControl>
-                        <FormLabel className="font-normal leading-[18px] text-foreground">
-                          {item.title}
-                        </FormLabel>
-                      </FormItem>
-                    )
-                  }}
-                />
-              ))}
-                <div className="space-y-1 leading-none">
+                <div className="flex gap-2">
+                  <input type="checkbox"
                   
+                    key={item.id}
+                    name={item.title}
+                    isChecked={values.service.includes(item.title)}
+                    onChange={(e) => handleCheckboxChange(e.target.name, e.target.checked)}
+                    colorScheme="white"
+                    borderColor="white"
+                    className="text-slate-100 opacity-101 z-10 realtive"
                   
-                </div>
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="budget"
-            id="budget"
-            type="budget" 
-            render={({ field }) => (
-              <FormItem className="">
-                <div className="space-y-1 leading-none">
-                  <FormLabel className="text-foreground">
-                    Monthly Budget
-                  </FormLabel>
-                  
-                </div>
+                   
+                 input/>
+                 {item.title}
+                 </div>
+                ))}
+              </Stack>
+            </CheckboxGroup>
+            <FormErrorMessage className="text-red-800">Please complete this required field.</FormErrorMessage>
+          </FormControl>
 
+          <FormControl mb={5} isInvalid={touched.budget && !values.budget} className="md:ml-12 lg:ml-3" required>
+            <FormLabel>Monthly Budget</FormLabel>
+            <CheckboxGroup  
+            className=""
+           
+              value={values.budget}
+              onChange={(newValues) => handleChange({ target: { name: "budget", value: newValues } })}
+            >
+              <Stack  className="flex flec-col text-white border-1 border-slate-100 pt-4 " >
                 {budgetItems.map((item) => (
-                <FormField
-                  key={item.id}
-                  control={form.control}
-                  name="budget"
-                  id="budget"
-                  type="budget"
-                  render={({ field }) => {
-                    return (
-                      <FormItem
-                        key={item.id}
-                        className="flex  items-start space-x-3 space-y-0"
-                      >
-                        <FormControl>
-                          <Checkbox className="bg-foreground text-slate-900"
-                            checked={field.value?.includes(item.id)}
-                            onCheckedChange={(checked) => {
-                              return checked
-                                ? field.onChange([...field.value, item.id])
-                                : field.onChange(
-                                    field.value?.filter(
-                                      (value) => value !== item.id
-                                    )
-                                  )
-                            }}
-                          />
-                        </FormControl>
-                        <FormLabel className="font-normal leading-[18px] text-foreground">
-                          {item.range}
-                        </FormLabel>
-                      </FormItem>
-                    )
-                  }}
-                />
-              ))}
-                <div className="space-y-1 leading-none">
+                <div className="flex gap-2">
+                  <input type="checkbox"
                   
+                    key={item.id}
+                    name={item.range}
+                    isChecked={values.service.includes(item.range)}
+                    onChange={(e) => handleCheckboxBudget(e.target.name, e.target.checked)}
+                    className="text-slate-100 opacity-101 z-10 realtive "
                   
-                </div>
-              </FormItem>
-            )}
-          />
-          </div>  
+                   
+                 input/>
+                 {item.range}
+                 </div>
+                ))}
+              </Stack>
+            </CheckboxGroup>
+            <FormErrorMessage className="text-red-800">Please complete this required field.</FormErrorMessage>
+          </FormControl>
         </div>
-        <Button disabled={loading} className="bg-[#FC8D00]  text-black hover:text-foreground hover:bg-black ml-auto" type="submit">
+        <div className="text-left pt-2">
+        <Button
+        
+        className="bg-[#FC8D00] text-foreground px-8 py-3 rounded-lg hover:bg-slate-100 opacity-100 hover:text-black"
+          isLoading={isLoading}
+          // disabled={!values.fullName || !values.email || !values.company || !values.mobile}
+          onClick={onSubmit}
+        >
           Submit
         </Button>
-      </form>
-    </Form>
-  </>
-);
+        </div>
+      </div>
+    </div>
+  );
 };
+
+export default HomePage;

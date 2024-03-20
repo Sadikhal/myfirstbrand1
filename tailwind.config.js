@@ -24,9 +24,13 @@ module.exports = {
       fontFamily: {
         rubik: ["var(--rubik)"], 
         raleway: ["var(--raleway)"], 
-        teko: ["var(--teko)"], 
+        teko: ["var(--teko)"],
+        playfair_display: ["var(--playfair_display)"],
+        open_sans: ["var(--open_sans)"],
 
-        
+       
+
+       
         
       },
       colors: {

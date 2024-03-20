@@ -8,9 +8,9 @@ const Page = () => {
   return (
     <div className='flex flex-col w-full overflow-hidden'>
       <Banner title='Contact us' page='contact'/>
-          <div className='py-20'>
-          <ContactDetails/>
-          </div>   
+      <div className='py-20'>
+        <ContactDetails/>
+      </div>   
       <ContactList />
       <div className='mt-12 py-10'>
         <GoogleMap />

@@ -7,18 +7,16 @@ const page = () => {
   return (
     <div>
       <Banner title='our openings' page='career'/>
-     <div className='mt-2 py-12'>
-      <div className='mt-12 my-12 py-5 flex flex-col justify-center items-center'>
-        <div className='text-center'>
-          <h4 className="leading-[.85em] text-[40px] lg:leading-[1.5rem] font-teko font-normal">our current openings
-          </h4>
-
-        </div>
-        <div 
-          className="
-          px-5
+      <div className='mt-2 py-12'>
+        <div className='mt-12 my-12 py-5 flex flex-col justify-center items-center'>
+          <div className='text-center'>
+            <h4 className="leading-[.85em] text-[40px] lg:leading-[1.5rem] font-teko font-normal">our current openings
+            </h4>
+          </div>
+          <div 
+            className="
+            px-5
             md:px-7
-
             pt-24
             grid 
             grid-cols-1 
@@ -28,19 +26,16 @@ const page = () => {
             xl:grid-cols-3
             2xl:grid-cols-4
             gap-12
-          "
-        >
-          {Listings.map((listing) => (
-            <CareerCard
-              key={listing.id}
-              data={listing}
-            />
-          ))}
-        </div>
-      <div>
-
-      </div>
-      </div> 
+            "
+          >
+            {Listings.map((listing) => (
+              <CareerCard
+                key={listing.id}
+                data={listing}
+              />
+            ))}
+          </div>
+        </div> 
       </div>
     </div>
   )
