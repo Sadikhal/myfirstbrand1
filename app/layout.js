@@ -33,7 +33,7 @@ const playfair_display = Playfair_Display({
 });
 
 export const metadata = {
-  title: "Myfirstbrand",
+  title: "Mybrandfirst",
   description: "Digital market company in Bangalore",
 };
 
