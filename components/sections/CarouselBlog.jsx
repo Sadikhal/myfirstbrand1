@@ -43,11 +43,11 @@ const CarouselBlog = () => {
                   <h1> {slides[currentIndex].heading}</h1>
                 </div>
 
-                <Link key={slides[currentIndex].id} href={`blog/${slides[currentIndex.id]}`} className='tracking- leading-[25.6px] font-open_sans  cursor-pointer text-foreground hover:text-[#FC8D00] hidden md:block text-[15px]'>
+                <Link key={slides[currentIndex].id} href={`blog/${slides[currentIndex].id}`} className='tracking- leading-[25.6px] font-open_sans  cursor-pointer text-foreground hover:text-[#FC8D00] hidden md:block text-[15px]'>
                 <p>{slides[currentIndex].introTitle}...</p>
                 </Link>
 
-                <Link key={slides.id} href='/blog/252' className='block text-[15px] font-open_sans py-8 '>
+                <Link key={slides.id} href={`blog/${slides[currentIndex].id}`} className='block text-[15px] font-open_sans py-8 '>
                   <Button className="bg-transparent border-[1.5px] text-foreground uppercase font-[700] tracking-[3px] px-6 py-6 hover:bg-transparent rounded-none hover:text-[#FC8D00] hover:border-[#FC8D00] hover:border-1 border-foreground">
                     Read More
                   </Button>

@@ -53,7 +53,7 @@ const DetailedFooter = () => {
         </div>
         <div className='flex flex-col gap-2 tracking-wide '>
           {servicesDetails.map((item) => (
-            <Link className="text-left" key={item.id} href={`service/${item.id}`}>
+            <Link className="text-left" key={item.id} href={`/services/${item.id}`} shallow>
              <div className='text-15px font-rubik capitalize hover:text-[#FC8D00]'>
               {item.title}
               </div>

@@ -46,7 +46,7 @@ const BlogPage = ({ blog }) => {
                 </div>
               ))}
               {blog.conclusion &&
-              <div className='pt-12 mt-7'>
+              <div className='pt-12 mt-5'>
                 <div className='text-[16px] text-foreground tracking-0 font-rubik  leading-[2.1em] tracking-0]
                   text-[#c4c4c4] text-justify '>
                 {blog.conclusion}

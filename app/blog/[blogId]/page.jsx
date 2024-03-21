@@ -6,11 +6,9 @@ import BlogNav from '@/components/sections/BlogNav';
 import ServiceCarousal from '@/components/sections/ServiceCarousal';
 
 const page = async ({params}) => {
+  
   const { blogId } = params;
-
- console.log({blogId})
-
-  // const blog = blogId ? { ...blogNotes.find(blog => blog.id === blogId), key: 'blog.id' } : null;
+ // const blog = blogId ? { ...blogNotes.find(blog => blog.id === blogId), key: 'blog.id' } : null;
 
   const blog= blogNotes.find(blog => blog.id === blogId);
   return (

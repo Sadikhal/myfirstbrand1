@@ -43,10 +43,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="px-10">
-        <SliderMotion/>
-      </div>
-      <div className="py-18 mt-12 relative">
+      
+      <div className="py-18 mt-12 relative pt-5">
         <CounterUp/>
       </div>
       <div id="about" className='px-9'>

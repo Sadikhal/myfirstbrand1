@@ -3,6 +3,7 @@ import { servicesDetails } from "@/lib/serviceDetails";
 import ContactForm from "@/components/sections/ContactForm";
 import ServiceCard from "@/components/sections/ServiceCard";
 import Hero from "@/components/sections/Hero";
+import { Separator } from "@/components/ui/separator";
 
 const ServiceIdPage = async ({ params }) => {
     
@@ -18,7 +19,7 @@ const ServiceIdPage = async ({ params }) => {
                 <div className="flex xl:flex-row  gap-11 flex-col lg:gap-9 xl:gap-14 px-8 lg:mt-1 mt-1 sm:mt-4">
                     <div className="flex flex-col text-left gap-10 xl:gap-18 xl:w-[61%]">    
                         <h2 className="font-teko text-4xl leading-[1.15em] md:text-[60px] md:leading-[1em] xl:text-[70px] xl:leading-[0.9em] font-normal uppercase relative hover:text-[#FC8D00]">
-                            {service.title} <span className="absolute bottom-0 ml-1 text-[#FC8D00]">.</span>
+                            our digital services <span className="absolute bottom-0 ml-1 text-[#FC8D00]">.</span>
                         </h2>
                         <div className="font-rubik text-base font-normal leading-[2.125em] text-justify">
                             Mybrandfirst is a premier digital marketing agency committed to propelling brands into the digital spotlight. Our team of experts guides clients through the intricacies of digital marketing, offering personalized approaches to each project.
@@ -44,7 +45,7 @@ const ServiceIdPage = async ({ params }) => {
                     {service.title} <span className="text-[#FC8D00]">.</span>
                 </h2>
                 <div className="flex flex-col xl:flex-row gap-14">
-                    <div className="flex flex-col xl:w-[61%] gap-11">
+                    <div className="flex flex-col xl:w-[63%] gap-11">
                         <div>
                             <img src={service.img} alt="service" className="object-cover border rounded-md w-full h-auto grayscale-[89%] hover:grayscale-0" />
                         </div>
@@ -66,7 +67,7 @@ const ServiceIdPage = async ({ params }) => {
                             }
                         </div>
                     </div>
-                    <div className="flex flex-col xl:w-[39%]">
+                    <div className="flex flex-col xl:w-[35%]">
                         <ServiceCard service={service} title={service.title} key={service.title}/>
                     </div>
                 </div>
