@@ -5,6 +5,7 @@ import MarketPlaceBanner from '@/components/sections/MarketPlaceBanner'
 import CounterUp from '@/components/sections/Slider'
 import SliderMotion from '@/components/sections/SliderMotion'
 import { Button } from '@/components/ui/button'
+import { Separator } from '@/components/ui/separator'
 import Link from 'next/link'
 import React from 'react'
 
@@ -32,9 +33,7 @@ const About = () => {
           <div className='flex-1 mt-12 lg:mt-0'>
             <div className='flex flex-col gap-5'>
               <h2 className='font-teko text-[36px] leading-[1.15em] sm:text-[42px] sm:leading-[1.15em] md:text-[60px] md:leading-[1em] xl:text-[70px] xl:leading-[0.9em] font-normal uppercase'>All About Us</h2>
-              <div className="font-rubik text-base font-normal leading-[2.125em] text-justify">Hello ,Welcome to our world. At Mybrandfirst, we don’t just create campaigns; we craft success stories. As we know Digital marketing is a powerful tool in the modern business world, offering a platform for businesses to reach a global audience, engage with customers, and drive growth. 
-SO we are here to help you,At Mybrandfirst, we understand the transformative power of digital marketing. We leverage our expertise in this field to craft strategies that align with your business goals, ensuring that your brand not only survives but thrives in the digital arena.
-so this is time  Get in touch us and let’s turn your digital aspirations into reality!</div>             
+              <div className="font-rubik text-base font-normal leading-[2.125em] text-justify lg:mr-4 mr-2">Introducing Mybrandfirst, where digital dreams become reality. We are a dynamic and innovative digital marketing agency dedicated to elevating your online presence and driving tangible results for your business. With a passion for creativity and a deep understanding of digital landscapes, we craft tailored strategies to propel your brand to new heights.</div>             
               <div className='flex justify-center items-center pb-10 pt-10'>
                 <Link href='#about' key='about us'>
                   <Button className="text-[18px] font-normal leading-[30px] tracking-[0.1em] font-teko bg-[#FC8D00] hover:bg-foreground px-[50px] py-[33px] uppercase">know more</Button>
@@ -54,6 +53,7 @@ so this is time  Get in touch us and let’s turn your digital aspirations into 
         <AboutDetalis/>
       </div>
       <MarketPlaceBanner/>
+      <Separator/>
     </div>
   )
 }

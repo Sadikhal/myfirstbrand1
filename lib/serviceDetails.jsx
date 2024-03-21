@@ -2,6 +2,7 @@
 export const servicesDetails = [
   {   id  : '1',
       title : "Website Development",
+      img :'/webdev.jpg',
       href  : "services/1",
       value : 90,
         desc : <div>At Mybrandfirst, we understand that your website is the digital storefront of your business
@@ -42,6 +43,7 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   title : "Social Media Marketing ",
   href  : "services/2",
   value : 95,
+  img :'/social13.jpg',
   desc :  <div>In today&#39;s digital age, social media has become a powerhouse for businesses to connect
   with their audience, build brand awareness, and drive meaningful engagement. At
   Mybrandfirst, we specialize in leveraging the power of social media to elevate your brand to
@@ -84,6 +86,9 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   title : "Paid Advertisement",
   href  : "services/3",
   value :91,
+  // img :'/paid ad2.jpg',
+  img :'/dm7.jpg',
+ 
   desc  : <div> In a highly competitive digital landscape, paid advertising is an indispensable tool for
   businesses looking to cut through the noise, reach their target audience, and drive tangible
   results. At [Your Agency Name], we specialize in delivering strategic, results-driven paid
@@ -116,6 +121,7 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   {   id  : '4',
   title : "Video Production",
   href  : "services/4",
+  img :'/vd5.jpg',
   value : 89,
   desc  : `In today&#39;s visually driven digital landscape, compelling video content has become a
   powerful tool for businesses to engage their audience and convey their message
@@ -130,17 +136,13 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   {   id  : '5',
   title : "Email Marketing",
   href  : "services/5",
+  img :'/email10.png',
   value: 86,
-  desc  : `Email marketing remains one of the most effective and cost-efficient ways for
-  businesses to connect with their audience, nurture leads, and drive conversions. At
-  Mybrandfirst, we offer comprehensive email marketing services that help our clients
-  deliver personalized, targeted messages to their subscribers and achieve their
-  marketing objectives. From designing eye-catching email templates to crafting
-  compelling content and optimizing send times, we&#39;ll help you leverage the power of
-  email to build brand loyalty, drive engagement, and grow your business.`
+  desc  : "Email marketing remains one of the most effective and cost-efficient ways forbusinesses to connect with their audience, nurture leads, and drive conversions. At Mybrandfirst, we offer comprehensive email marketing services that help our clients deliver personalized, targeted messages to their subscribers and achieve their marketing objectives. From designing eye-catching email templates to crafting compelling content and optimizing send times, we'll help you leverage the power ofemail to build brand loyalty, drive engagement, and grow your business."
   },
   {   id  : '6',
   title : "Whatsapp Marketing",
+  img :'/wp.png',
   href  : "services/6",
   desc  : `With billions of active users worldwide, WhatsApp has emerged as a powerful
   platform for businesses to connect with their audience in real-time and deliver
@@ -152,7 +154,8 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   business goals and stay ahead of the competition.`
   },
   {  id  : '7',
-  title : "App Development",
+  title : "app development",
+  img :'/app2.jpeg',
   href  : "services/7",
   desc  : `In today&#39;s mobile-first world, having a user-friendly and feature-rich mobile app is
   essential for businesses looking to enhance their brand presence, streamline
@@ -166,6 +169,7 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
 },
 {
   id :'8',
+  img :'/market10.jpg',
   title:'Marketplace',
   href : 'services/8',
   active : true,

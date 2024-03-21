@@ -4,7 +4,8 @@ import CompanyDetails from "@/components/sections/CompanyDetails";
 import IntroBanner from "@/components/sections/IntroBanner";
 import CounterUp from "@/components/sections/Slider";
 import SliderMotion from "@/components/sections/SliderMotion";
-import NavbarComponent from "@/components/Navbar";
+import NavbarComponent from "@/components/sections/Navbar";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
       <div className="pt-4 md:pt-8 h-full">
         <IntroBanner />
       </div>
-      <div className="px-10 pt-5">
+      {/* <div className="px-10 pt-5">
         <SliderMotion />
-      </div>
+      </div> */}
       <div className="py-18 mt-12 relative">
         <CounterUp />
       </div>
@@ -30,6 +31,7 @@ export default function Home() {
       <div className="px-7 py-12">
         <Faqs />
       </div>
+      <Separator/>
     </div>
   );
 }

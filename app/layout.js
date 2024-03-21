@@ -4,6 +4,7 @@ import Footer from "@/components/sections/Footer";
 import { Separator } from "@/components/ui/separator";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Toaster } from "@/components/ui/toaster";
+import DetailedFooter from "@/components/sections/DetailedFooter";
  
 
 const open_sans = Open_Sans({
@@ -46,7 +47,9 @@ export default function RootLayout({ children }) {
     
         {children}
         <Toaster />
-        <div className="pt-12">
+        <div className="">
+       
+          <DetailedFooter/>
           <Separator className="w-full" />
           <div className="flex items-center justify-center">
             <Footer />

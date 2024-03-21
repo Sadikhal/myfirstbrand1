@@ -9,7 +9,7 @@ const BlogPage = ({ blog }) => {
   return (
     <div className='flex flex-col lg:flex-row gap-10 px-8 pl-10 h-full'>
       <div className='flex-1 flex flex-col justify-center items-center'>
-        <img src={blog.img} alt="blog1" className='w-full object-cover h-full' />
+        <img src={blog?.img} alt="blog1" className='w-full object-cover h-full' />
         <div className='w-full py-8'>
           <div className='flex flex-col justify-center items-center gap-6'>
             <Link className="uppercase font-[700] tracking-[2px] text-[12px] text-[#FC8D00] " href="/blog" key="id">
@@ -45,6 +45,14 @@ const BlogPage = ({ blog }) => {
                   </div>
                 </div>
               ))}
+              {blog.conclusion &&
+              <div className='pt-12 mt-7'>
+                <div className='text-[16px] text-foreground tracking-0 font-rubik  leading-[2.1em] tracking-0]
+                  text-[#c4c4c4] text-justify '>
+                {blog.conclusion}
+                </div>
+              </div>
+              }
             </div>
           </div>
           <div></div>

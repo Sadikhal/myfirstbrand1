@@ -3,6 +3,7 @@ import React from 'react';
 import ContactList from '@/components/sections/ContactList';
 import GoogleMap from '@/components/sections/GoogleMap';
 import ContactDetails from '@/components/sections/ContactDetails';
+import { Separator } from '@/components/ui/separator';
 
 const Page = () => {
   return (
@@ -15,6 +16,7 @@ const Page = () => {
       <div className='mt-12 py-10'>
         <GoogleMap />
       </div>
+      <Separator/>
     </div>
   );
 };

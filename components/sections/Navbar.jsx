@@ -2,10 +2,10 @@
 import NavbarRoutes from '@/components/sections/NavbarRoutes';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Separator } from './ui/separator';
-import { buttonVariant, descVariant, navVariant, navVariants, textVariant } from './utils/motion';
+import { Separator } from '../ui/separator';
+import { buttonVariant, descVariant, navVariant, navVariants, textVariant } from '../utils/motion';
 import Link from 'next/link';
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 
 const NavbarComponent = () => {
   return (

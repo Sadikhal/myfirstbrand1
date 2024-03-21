@@ -7,13 +7,13 @@ const AboutAgency = () => {
   return (
     <div className='flex flex-col'>
       <div className='flex flex-col xl:flex-row xl:justify-between xl:gap-12 gap-9'>
-        <div className='flex flex-col gap-12 xl:flex-[0.7]'>
+        <div className='flex flex-col gap-12 xl:flex-[0.65]'>
           <div className='flex flex-col gap-8'>
             <div>
               <h3 className='font-teko text-[60px] leading-[0.85em] font-normal uppercase'>our expert team<span>.</span></h3>
             </div>
             <div>
-              <img src="/grp teachings3.jpg" alt="teams" className='object-cover h-auto sm:h-[320px] rounded-lg xl:w-[530px] sm:w-[534px] xl:h-full w-full grayscale-[89%] hover:grayscale-0'/>
+              <img src="/grp teaching3.jpg" alt="teams" className='object-cover sm:h-[350px] md:h-[480px] lg:h-[550px] rounded-lg h-[290px] w-full grayscale-[89%] hover:grayscale-0 xl:h-[380px] 2xl:max-h-[400px]'/>
             </div>
             <div className='font-rubik text-[16px] font-normal leading-[2.125em] text-justify'>
               At MyBrandFirst, we believe in putting your brand first. Our passion lies in crafting digital marketing strategies that elevate your brand's presence, drive engagement, and deliver measurable results. With a team of creative minds and digital experts, we're here to transform your online presence and help you achieve your business goals.

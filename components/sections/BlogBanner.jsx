@@ -2,6 +2,9 @@ import React from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
 import BlogCard from './BlogCard'
+import { Separator } from '../ui/separator'
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 const BlogBanner = ({item}) => {
   return (
@@ -24,7 +27,7 @@ const BlogBanner = ({item}) => {
 
               <div >
                 <p className='text-[16px] text-[#c4c4c4]  font-rubik  leading-[2.1em] first-letter:text-7xl first-letter:font-[400] first-letter:text-white
-  first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 text-justify tracking-0 '>
+                  first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 sm:text-justify tracking-0 text-left '>
                 {item.introduction} ....
                 </p>
               </div>
@@ -32,9 +35,23 @@ const BlogBanner = ({item}) => {
                   <Button className="bg-transparent border-[1.5px] hover:border-slate-100 uppercase font-[700] text-foreground tracking-[3px] px-6 py-6 hover:bg-transparent rounded-none text-[#FC8D00] border-[#FC8D00]  hover:text-foreground">
                     Read More
                   </Button>
-                </Link>
+              </Link>
+              <div className='flex justify-between w-full items-center'>
+                <div className='flex gap-[1px] items-center'>
+                  <Avatar>
+                    <AvatarImage src="/logo.png" className=""/>
+                  <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
 
+                 
+                  <div className='italic font-raleway tracking-tighter text-[14px]'>mybrandfirst</div>
+                </div>
+                <div className='italic font-raleway tracking-tighter text-[14px]'>
+                  Comments Off
+                </div>
 
+              </div>
+                <Separator className="w-full " />
 
               <div>
 
@@ -48,6 +65,7 @@ const BlogBanner = ({item}) => {
           </div>
           
         </div>
+        
         </Link> 
 
 

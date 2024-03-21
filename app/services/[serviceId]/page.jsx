@@ -46,7 +46,7 @@ const ServiceIdPage = async ({ params }) => {
                 <div className="flex flex-col xl:flex-row gap-14">
                     <div className="flex flex-col xl:w-[61%] gap-11">
                         <div>
-                            <img src="/dm7.jpg" alt="service" className="object-cover border rounded-md w-full h-auto grayscale-[89%] hover:grayscale-0" />
+                            <img src={service.img} alt="service" className="object-cover border rounded-md w-full h-auto grayscale-[89%] hover:grayscale-0" />
                         </div>
                         <div className="font-rubik text-base font-normal leading-[2.125em] lg:px-4 px-3 text-justify">
                             {service.desc}
@@ -72,8 +72,9 @@ const ServiceIdPage = async ({ params }) => {
                 </div>
             </div>
             <div className="py-12 pb-20">
-                <Hero /> 
+                <Hero  title={service.title}/> 
             </div>
+            <Separator/>
         </div> 
     );
 };

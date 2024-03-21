@@ -12,7 +12,7 @@ const page = async ({params}) => {
 
   // const blog = blogId ? { ...blogNotes.find(blog => blog.id === blogId), key: 'blog.id' } : null;
 
-  const blog= blogNotes.find(blog => blog.id === 254);
+  const blog= blogNotes.find(blog => blog.id === blogId);
   return (
     <div className='w-full '>
         <BlogNav />
@@ -20,6 +20,7 @@ const page = async ({params}) => {
         <div className=''>
           <BlogPage blog={blog} />
         </div>
+        
     </div>
   
   )

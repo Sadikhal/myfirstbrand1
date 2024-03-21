@@ -11,7 +11,7 @@ export async function POST(request) {
     console.log(data);
     
     // Check if any required field is missing or empty
-    if (!data || !data.fullName || !data.email || !data.mobile || !data.company || !data.service || !data.budget) {
+    if (!data || !data.fullName || !data.email || !data.mobile || !data.company ) {
         return NextResponse.json({ error: "Bad request" }, { status: 400 });
     }
 

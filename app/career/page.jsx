@@ -1,6 +1,7 @@
 import { Listings } from '@/components/constants/Listings'
 import Banner from '@/components/sections/Banner'
 import CareerCard from '@/components/sections/CareerCard'
+import { Separator } from '@/components/ui/separator'
 import React from 'react'
 
 const page = () => {
@@ -37,6 +38,7 @@ const page = () => {
           </div>
         </div> 
       </div>
+      <Separator/>
     </div>
   )
 }

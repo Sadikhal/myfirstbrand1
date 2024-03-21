@@ -64,7 +64,7 @@ const HomePage = () => {
   };
 
   const onSubmit = async (e) => {
-    if (!values.fullName || !values.email || !values.mobile || !values.company || values.service.length === 0 || values.budget.length === 0) {
+    if (!values.fullName || !values.email || !values.mobile || !values.company ) {
      ;
       toast({
         variant: "destructive",
@@ -200,7 +200,7 @@ const HomePage = () => {
           />
           <FormErrorMessage className="text-red-800">Please complete this required field. </FormErrorMessage>
         </FormControl>
-        <div className="flex flex-row lg:gap-10  gap-12 ">
+        {/* <div className="flex flex-row lg:gap-10  gap-12 ">
           <FormControl mb={5} isInvalid={touched.service && !values.service}>
             <FormLabel>Select Services</FormLabel>
             <CheckboxGroup  
@@ -260,7 +260,7 @@ const HomePage = () => {
             </CheckboxGroup>
             <FormErrorMessage className="text-red-800">Please complete this required field.</FormErrorMessage>
           </FormControl>
-        </div>
+        </div> */}
         <div className="text-left pt-2">
         <Button
         
