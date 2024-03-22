@@ -44,7 +44,7 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   href  : "services/2",
   value : 95,
   img :'/social13.jpg',
-  desc :  <div>In today&#39;s digital age, social media has become a powerhouse for businesses to connect
+  desc :  <div>In today's digital age, social media has become a powerhouse for businesses to connect
   with their audience, build brand awareness, and drive meaningful engagement. At
   Mybrandfirst, we specialize in leveraging the power of social media to elevate your brand to
   new heights.
@@ -52,7 +52,7 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
 <br/>
   Our social media marketing services are designed to help you stand out in a crowded digital
   landscape, foster genuine connections with your audience, and drive tangible results for
-  your business. Whether you&#39;re looking to increase followers, boost website traffic, generate
+  your business. Whether you're looking to increase followers, boost website traffic, generate
   leads, or drive sales, our team of social media experts will develop a customized strategy
   tailored to your unique goals and objectives.
   From crafting compelling content that resonates with your audience to implementing
@@ -65,7 +65,7 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
 <br/>
   But our social media marketing services go beyond just posting content and running ads. We
   believe in fostering genuine engagement and building meaningful relationships with your
-  audience. That&#39;s why we prioritize community management, actively engaging with your
+  audience. That's why we prioritize community management, actively engaging with your
   
   followers, responding to inquiries and feedback, and fostering conversations that
   strengthen brand loyalty and advocacy.
@@ -75,9 +75,9 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   strategies to ensure maximum effectiveness and ROI.
   <br/>
 <br/>
-  Whether you&#39;re a small business looking to establish a presence on social media or a large
+  Whether you're a small business looking to establish a presence on social media or a large
   enterprise seeking to take your social media marketing efforts to the next level, we have the
-  expertise and experience to help you achieve your goals. Let&#39;s work together to unlock the
+  expertise and experience to help you achieve your goals. Let's work together to unlock the
   full potential of social media for your brand. Get in touch with us today to learn more about
   our social media marketing services and how we can help you succeed in the digital world.</div>
 
@@ -91,13 +91,13 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
  
   desc  : <div> In a highly competitive digital landscape, paid advertising is an indispensable tool for
   businesses looking to cut through the noise, reach their target audience, and drive tangible
-  results. At [Your Agency Name], we specialize in delivering strategic, results-driven paid
+  results. At Mybrandfirst, we specialize in delivering strategic, results-driven paid
   advertising campaigns that help our clients achieve their business objectives and maximize
   their return on investment.
   <br/>
 <br/>
   Our paid advertising services encompass a wide range of platforms, including search
-  engines, social media networks, display networks, and more. Whether you&#39;re looking to
+  engines, social media networks, display networks, and more. Whether you're looking to
   increase website traffic, generate leads, boost sales, or enhance brand visibility, our team of
   certified experts will develop a customized paid advertising strategy tailored to your specific
   goals and target audience.
@@ -105,16 +105,16 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   employ a data-driven approach to ensure maximum effectiveness and efficiency. We
   leverage advanced analytics and tracking tools to monitor campaign performance in real-
   time, allowing us to make data-driven optimizations and maximize your advertising budget.
-  But our commitment to your success doesn&#39;t end with launching your campaigns. We
+  But our commitment to your success doesn't end with launching your campaigns. We
   provide comprehensive analytics and reporting to track key performance metrics, measure
   ROI, and provide actionable insights for future campaigns. We believe in transparency and
   collaboration, and we work closely with our clients to ensure that their paid advertising
   efforts are aligned with their overall business objectives.
   <br/>
 <br/>
-  Whether you&#39;re a small business looking to dip your toes into the world of paid advertising
+  Whether you're a small business looking to dip your toes into the world of paid advertising
   or a large enterprise seeking to scale your existing campaigns, we have the expertise and
-  experience to help you achieve your goals. Let&#39;s work together to unlock the full potential of
+  experience to help you achieve your goals. Let's work together to unlock the full potential of
   paid advertising for your brand. Get in touch with us today to learn more about our paid
   advertising services and how we can help you succeed in the digital marketplace.</div>
   },
@@ -123,7 +123,7 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   href  : "services/4",
   img :'/vd5.jpg',
   value : 89,
-  desc  : `In today&#39;s visually driven digital landscape, compelling video content has become a
+  desc  : `In today's visually driven digital landscape, compelling video content has become a
   powerful tool for businesses to engage their audience and convey their message
   effectively. At Mybrandfirst, we specialize in high-quality video production services
   that help our clients stand out from the competition and leave a lasting impression on
@@ -154,18 +154,10 @@ Get in touch with us today, and let's turn your digital vision into reality.</di
   business goals and stay ahead of the competition.`
   },
   {  id  : '7',
-  title : "app development",
+  title : "App development",
   img :'/app2.jpeg',
   href  : "services/7",
-  desc  : `In today&#39;s mobile-first world, having a user-friendly and feature-rich mobile app is
-  essential for businesses looking to enhance their brand presence, streamline
-  operations, and drive customer engagement. At Mybrandfirst, we specialize in
-  custom app development services that help our clients bring their ideas to life and
-  deliver seamless digital experiences to their users. Whether you&#39;re looking to
-  develop a native iOS app, Android app, or cross-platform solution, our team of
-  experienced developers will work closely with you to understand your requirements,
-  design a tailored solution, and deliver a high-quality app that meets your business
-  objectives and delights your users.`
+  desc  : "In today's mobile-first world, having a user-friendly and feature-rich mobile app isessential for businesses looking to enhance their brand presence, streamline operations, and drive customer engagement. At Mybrandfirst, we specialize in custom app development services that help our clients bring their ideas to life and deliver seamless digital experiences to their users. Whether you're looking to develop a native iOS app, Android app, or cross-platform solution, our team of experienced developers will work closely with you to understand your requirements,design a tailored solution, and deliver a high-quality app that meets your business objectives and delights your users."
 },
 {
   id :'8',
