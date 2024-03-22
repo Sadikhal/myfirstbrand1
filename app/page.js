@@ -31,7 +31,6 @@ export default function Home() {
       <div className="px-7 py-5">
         <Faqs />
       </div>
-      <Separator/>
     </div>
   );
 }

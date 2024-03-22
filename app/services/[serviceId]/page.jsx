@@ -75,7 +75,6 @@ const ServiceIdPage = async ({ params }) => {
             <div className="">
                 <Hero  title={service.title}/> 
             </div>
-            <Separator/>
         </div> 
     );
 };

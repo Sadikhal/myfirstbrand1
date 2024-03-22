@@ -27,7 +27,7 @@ const page = () => {
         <div className='w-full '>
         <BlogCard2 />
         <BlogCard /> 
-        <div className='hidden '>
+        <div className='lg:hidden flex '>
         <BlogCard3/>
         </div>
        

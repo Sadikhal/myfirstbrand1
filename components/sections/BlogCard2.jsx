@@ -23,7 +23,7 @@ const BlogCard2 = ({ service, title }) => {
           {Category.map((item) => (
             // <ServiceItems key={item.id} name={item} title={service.title} />
             <Link key={item.id} href='/blog/254'>
-          <div className='text-[15px] font-open_sans text-[#C4C4C4] leading-[44px]'>   
+          <div className='text-[15px] font-open_sans text-[#C4C4C4] capitalize leading-[44px]'>   
               {item.title} 
           </div>
           <div className='pt-[1.2px]'>

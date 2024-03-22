@@ -38,7 +38,6 @@ const page = () => {
           </div>
         </div> 
       </div>
-      <Separator/>
     </div>
   )
 }

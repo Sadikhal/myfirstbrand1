@@ -48,7 +48,6 @@ const About = () => {
         <AboutDetalis/>
       </div>
       <MarketPlaceBanner/>
-      <Separator/>
     </div>
   )
 }

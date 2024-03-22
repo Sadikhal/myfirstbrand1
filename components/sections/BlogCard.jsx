@@ -11,7 +11,7 @@ const BlogCard = ({ service, title }) => {
       <Card className="w-full bg-transparent border-none ">
         <CardHeader className='pt-10 mt-3 lg:mt-7'>
           <CardTitle className="flex flex-row items-center w-full lg:gap-3 gap-4">
-            <div className='flex-[.7] lg:flex-[.3]'>
+            <div className='flex-[.7] lg:flex-[.3] '>
             <Separator className="text-slate-500 w-full"/>
             </div>
             <div className='flex justify-center items-center flex-[.2] lg:flex-[.8]'>

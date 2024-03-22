@@ -63,10 +63,12 @@ const BlogPage = ({ blog }) => {
       </div>
 
       <div className='flex-[.4] sm:px-12 lg:px-0 sm:mx-12 lg:mx-0 '>
-        <div className='w-full sticky -top-60 '>
+        <div className='w-full lg:sticky lg:-top-60 '>
+         
           <BlogCard2 />
           <BlogCard />
-          <div className='lg:hidden'>
+      
+          <div className='lg:hidden flex '>
           <BlogCard3 />
            </div>
         

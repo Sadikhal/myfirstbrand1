@@ -16,7 +16,6 @@ const Page = () => {
       <div className='mt-12 py-10'>
         <GoogleMap />
       </div>
-      <Separator/>
     </div>
   );
 };
