@@ -17,17 +17,17 @@ const page = () => {
       <BlogNav/>
       <ServiceCarousal/>
       <CarouselBlog/>
-      <div  className=' flex flex-col lg:flex-row gap-10 px-8 pl-10 pt-12 '>
+      <div  className=' flex flex-col lg:flex-row gap-10 px-8 pl-10 pt-12 items-start'>
           <div className='flex-1 '>
-            {blogNotes.map((item) => (
-              <BlogBanner item={item} key={item.id}/>
-            ))}
+          {blogNotes.map((item, index) => (
+        <BlogBanner key={item.id} item={item} isLast={index === blogNotes.length - 1} />
+      ))}
           </div >
-      <div className='flex-[.4] sm:px-12 lg:px-0 sm:mx-12 lg:mx-0 '>
-        <div className='w-full'>
+      <div className='flex-[.4] sm:px-12 lg:px-0 sm:mx-12 lg:mx-0 lg:sticky lg:-top-60'>
+        <div className='w-full '>
         <BlogCard2 />
         <BlogCard /> 
-        <div className=' '>
+        <div className='hidden '>
         <BlogCard3/>
         </div>
        

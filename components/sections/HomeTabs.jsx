@@ -12,7 +12,7 @@ const HomeTabs = () => {
         {Teamswork.map((item) => ( 
           <div key={item.id} className='text-left w-full'>
             <AccordionItem value={item.id} className='text-slate-900 data-[state=open]:text-foreground flex flex-col items-start gap-4 w-full'>
-              <AccordionTrigger className='text-left font-teko leading-[32px] font-normal text-[20px] uppercase cursor-pointer tracking-[1px] w-full data-[state=open]:text-[35px]'>
+              <AccordionTrigger className='text-left font-teko leading-[32px] font-normal text-[20px] uppercase cursor-pointer tracking-[1px] w-full data-[state=open]:text-[35px] px-1'>
                 {item.title}
               </AccordionTrigger>
               <AccordionContent className='w-full'>

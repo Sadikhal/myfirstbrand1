@@ -1,20 +1,25 @@
-import React from 'react'
+
+'use client'
+import React, { useState } from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
 import BlogCard from './BlogCard'
 import { Separator } from '../ui/separator'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { blogNotes } from '../constants/BlogNotes'
 
 
-const BlogBanner = ({item}) => {
+
+const BlogBanner = ({item,isLast}) => {
+  
   return (
       <Link href={`/blog/${item.id}`} className='flex flex-col justify-center items-center ' key={item.id} shallow>
         <img src={item.img} alt="blog1" className='w-full object-cover h-full' />
         <div className='w-full py-8'>
           <div className='flex flex-col justify-center items-center gap-6'>
-              <Link className="uppercase font-[700] tracking-[2px] text-[12px] text-[#FC8D00] " href="/" key="id">
+              <div className="uppercase font-[700] tracking-[2px] text-[12px] text-[#FC8D00] ">
                { item.category}
-              </Link>
+              </div>
 
               <div className='text-center xl:px-2'>
                 <h2 className='text-foreground leading-[44px] text-[40px] font-normal font-playfair_display tracking-[.8px] capitalize md:tracking-wide'>
@@ -51,11 +56,10 @@ const BlogBanner = ({item}) => {
                 </div>
 
               </div>
-                <Separator className="w-full " />
-
-              <div>
-
-              </div>
+              {
+                !isLast && <Separator className="w-full " /> 
+              }      
+              
 
           </div> 
 

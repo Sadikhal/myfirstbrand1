@@ -10,9 +10,6 @@ import Link from 'next/link'
 import React from 'react'
 
 
-
-
-
 const About = () => {
   return (
     <div className='flex flex-col gap-12'>
@@ -44,7 +41,7 @@ const About = () => {
         </div>
       </div>
       
-      <div className="py-18 mt-12 relative pt-5">
+      <div className="py-2 mt-8 relative pt-12">
         <CounterUp/>
       </div>
       <div id="about" className='px-9'>

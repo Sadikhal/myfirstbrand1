@@ -4,6 +4,7 @@ import Link from 'next/link';
 import BlogCard from './BlogCard';
 import BlogCard3 from './BlogCard3';
 import BlogCard2 from './BlogCard2';
+import { Separator } from '../ui/separator';
 
 const BlogPage = ({ blog }) => {
   return (
@@ -46,7 +47,7 @@ const BlogPage = ({ blog }) => {
                 </div>
               ))}
               {blog.conclusion &&
-              <div className='pt-12 mt-5'>
+              <div className='pt-12'>
                 <div className='text-[16px] text-foreground tracking-0 font-rubik  leading-[2.1em] tracking-0]
                   text-[#c4c4c4] text-justify '>
                 {blog.conclusion}
@@ -57,17 +58,21 @@ const BlogPage = ({ blog }) => {
           </div>
           <div></div>
         </div>
+      <Separator className="w-full"/> 
+
       </div>
+
       <div className='flex-[.4] sm:px-12 lg:px-0 sm:mx-12 lg:mx-0 '>
-        <div className='w-full '>
+        <div className='w-full sticky -top-60 '>
           <BlogCard2 />
           <BlogCard />
-          <div className=' sticky top-0 h-full overflow-y-auto'>
+          <div className='lg:hidden'>
           <BlogCard3 />
            </div>
         
         </div>
       </div>
+      {/* <Separator className="w-full"/> */}
     </div>
   );
 }

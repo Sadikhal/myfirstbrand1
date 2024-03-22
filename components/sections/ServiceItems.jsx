@@ -9,7 +9,7 @@ const ServiceItems = ({name,title}) => {
   return (
     <>
           <Link key={name.id} href={`/services/${name.id}`} shallow>
-            <Button variant="service" size="sm" className= {cn("w-full py-5 flex flex-row bg-slate-900           justify-between ", isActive && 'bg-primary text-primary-foreground' )}>
+            <Button variant="service" size="sm" className= {cn("w-full py-5 md:py-7 xl:py-8 flex flex-row bg-slate-900           justify-between ", isActive && 'bg-primary text-primary-foreground' )}>
               <div className="text-[16px] font-normal leading-[48px] z-1 capitalize font-rubik">
                 {name.title}
               </div>

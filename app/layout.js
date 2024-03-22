@@ -48,6 +48,8 @@ export default function RootLayout({ children }) {
         {children}
         <Toaster />
         <div className="">
+        <Separator className="w-full" />
+
        
           <DetailedFooter/>
           <Separator className="w-full" />

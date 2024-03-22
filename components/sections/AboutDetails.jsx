@@ -3,7 +3,7 @@ import TabBar from '@/components/sections/TabBar';
 
 const AboutDetails = () => {
   return (
-    <div className='flex flex-col xl:flex-row gap-8 xl:gap-14 xl:justify-between mt-12 py-5'>
+    <div className='flex flex-col xl:flex-row gap-8 xl:gap-14 xl:justify-between mt-12'>
       <div className='lg:flex-[0.7] flex flex-col gap-9'>
         <div>
           <h2 className='font-teko text-[36px] leading-[1.15em] sm:text-[42px] sm:leading-[1.15em] md:text-[60px] md:leading-[1em] xl:text-[70px] xl:leading-[0.9em] font-normal uppercase'>

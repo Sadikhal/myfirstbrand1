@@ -9,7 +9,7 @@ const BlogCard = ({ service, title }) => {
   return (
     <div>
       <Card className="w-full bg-transparent border-none ">
-        <CardHeader className='pt-10 mt-3'>
+        <CardHeader className='pt-10 mt-3 lg:mt-7'>
           <CardTitle className="flex flex-row items-center w-full lg:gap-3 gap-4">
             <div className='flex-[.7] lg:flex-[.3]'>
             <Separator className="text-slate-500 w-full"/>
@@ -20,7 +20,7 @@ const BlogCard = ({ service, title }) => {
             <Separator className="text-slate-500 flex-[.7] lg:flex-[.3]"/>
           </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="">
           {servicesDetails.map((item) => (
             // <ServiceItems key={item.id} name={item} title={service.title} />
            <Link key={item.id} href={`/services/${item.id}`}>

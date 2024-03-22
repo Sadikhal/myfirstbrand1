@@ -22,13 +22,13 @@ export default function Home() {
       <div className="py-18 mt-12 relative">
         <CounterUp />
       </div>
-      <div className="xl:px-8 mt-6 px-11 py-12">
+      <div className="xl:px-8  px-11 py-10">
         <AboutAgency />
       </div>
       <div className="px-4 py-5">
         <CompanyDetails />
       </div>
-      <div className="px-7 py-12">
+      <div className="px-7 py-5">
         <Faqs />
       </div>
       <Separator/>

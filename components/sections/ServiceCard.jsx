@@ -5,9 +5,9 @@ import ServiceItems from "./ServiceItems";
 
 const ServiceCard = ({ service, title }) => {
   return (
-    <div>
+    <div className=''>
       <Card className="w-full bg-slate-900">
-        <CardHeader className='pt-10 mt-3'>
+        <CardHeader className=''>
           <CardTitle>
             <div className="font-teko text-[24px] font-normal">ALL SERVICES</div>
           </CardTitle>

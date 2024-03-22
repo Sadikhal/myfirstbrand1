@@ -39,13 +39,13 @@ const ServiceIdPage = async ({ params }) => {
                     </div>
                 </div> 
             </div> 
-            <div className="py-5 h-4"></div> 
+           
             <div className="px-8 flex flex-col gap-14">
                 <h2 className="font-teko text-[42px] leading-[1.15em] md:text-[60px] md:leading-[1em] xl:text-[70px] xl:leading-[0.9em] font-normal uppercase hover:text-[#FC8D00]">
                     {service.title} <span className="text-[#FC8D00]">.</span>
                 </h2>
-                <div className="flex flex-col xl:flex-row gap-14">
-                    <div className="flex flex-col xl:w-[63%] gap-11">
+                <div className="flex flex-col gap-5">
+                    <div className="flex flex-col  gap-11">
                         <div>
                             <img src={service.img} alt="service" className="object-cover border rounded-md w-full h-auto grayscale-[89%] hover:grayscale-0" />
                         </div>
@@ -67,12 +67,12 @@ const ServiceIdPage = async ({ params }) => {
                             }
                         </div>
                     </div>
-                    <div className="flex flex-col xl:w-[35%]">
+                    <div className="flex flex-col    ">
                         <ServiceCard service={service} title={service.title} key={service.title}/>
                     </div>
                 </div>
             </div>
-            <div className="py-12 pb-20">
+            <div className="">
                 <Hero  title={service.title}/> 
             </div>
             <Separator/>
