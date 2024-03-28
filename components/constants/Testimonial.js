@@ -11,7 +11,7 @@ export const Testimonial = [
     id:1,
     name : "Shafeek",
     brand : "Comfold",
-    desc : "Working with Mybrandfirst has been a game-changer for our business. Their strategic approach and attention to detail have significantly boosted our online presence. They truly understand our brand and audience, delivering exceptional results that exceeded our expectations. We highly recommend their services to anyone looking to elevate their digital marketing efforts.",
+    desc : "We've partnered with several digital marketing agencies in the past, but none have provided the level of expertise and personalized service like Mybrandfirst. Their team took the time to understand and crafted tailored solutions that drove tangible results. Thanks to their efforts, our online  sales have seen remarkable growth. We're grateful for their dedication and professionalism.",
   },
   {
     id:3,
