@@ -43,8 +43,8 @@ const TestimonialSlider = ({number}) => {
         >
         {
           Testimonial.map((item) => (
-          <SwiperSlide className='sm:text-justify  text-foreground'>
-            <Card className="p-4 bg-[#011222] group hover:bg-[#FC8D00] drop-shadow-2xl">
+          <SwiperSlide className='text-justify  text-foreground'>
+            <Card className="md:p-4 p-1 sm:p-2 bg-[#011222] group hover:bg-[#FC8D00] drop-shadow-2xl">
               <CardHeader>
         
               <CardDescription className=" flex justify-between items-center">
