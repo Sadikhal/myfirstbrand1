@@ -13,7 +13,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='flex flex-col gap-12'>
-      <Banner title="why do we" page="about us"/>
+      <Banner title="what we do" page="about us"/>
       <div className='flex mt-3 sm:mt-4 md:mt-6 lg:mt-8 gap-12 overflow-hidden'>
         <div className='flex lg:flex-row px-5 flex-col lg:gap-5 xl:gap-10'>
           <div className='flex flex-col flex-1 lg:px-9 md:px-6 sm:px-5 px-1'>
