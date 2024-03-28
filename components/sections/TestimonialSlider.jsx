@@ -4,6 +4,7 @@ import '../ui/styles.css'
 import React, { useRef, useState } from 'react';
 import 'boxicons'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import dynamic from 'next/dynamic';
 import {
   Card,
   CardContent,
@@ -81,3 +82,8 @@ const TestimonialSlider = ({number}) => {
 }
 
 export default TestimonialSlider
+
+
+
+
+

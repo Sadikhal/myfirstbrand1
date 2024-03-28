@@ -7,9 +7,11 @@ import SliderMotion from "@/components/sections/SliderMotion";
 import NavbarComponent from "@/components/sections/Navbar";
 import { Separator } from "@/components/ui/separator";
 import TestimonialSlider from "@/components/sections/TestimonialSlider";
+import ClientOnly from "@/components/sections/ClientOnly";
 
 export default function Home() {
   return (
+   <ClientOnly>
     <div className="flex flex-col gap-12 w-full">
       <div className="mb-12 h-screen w-full">
         <NavbarComponent />
@@ -27,9 +29,9 @@ export default function Home() {
       <div className="hidden xl:block mt-8">
         <TestimonialSlider number='2'/>
       </div>
-      <div className="block xl:hidden mt-8">
+      {/* <div className="block xl:hidden mt-8">
         <TestimonialSlider number='1'/>
-      </div>
+      </div> */}
       <div className="xl:px-8  px-11 py-4">
         <AboutAgency />
       </div>
@@ -40,5 +42,6 @@ export default function Home() {
         <Faqs />
       </div>
     </div>
+  </ClientOnly> 
   );
 }

@@ -2,7 +2,6 @@ import { Teko, Rubik, Raleway, Playfair_Display, Open_Sans } from "next/font/goo
 import "./globals.css";
 import Footer from "@/components/sections/Footer";
 import { Separator } from "@/components/ui/separator";
-import { ChakraProvider } from "@chakra-ui/react";
 import { Toaster } from "@/components/ui/toaster";
 import DetailedFooter from "@/components/sections/DetailedFooter";
  
