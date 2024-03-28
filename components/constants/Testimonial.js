@@ -17,6 +17,6 @@ export const Testimonial = [
     id:3,
     name : "Nizar",
     brand : "Cbeeso",
-    desc : "  I can't speak highly enough about Mybrandfirst. From the initial consultation to the ongoing campaign management, they've been a pleasure to work with. Their creative approach, coupled with their in-depth analytics, has helped us achieve remarkable ROI on our digital marketing investments. If you're looking for a reliable partner to take your online presence to the next level, look no further than Mybrandfirst.",
+    desc : "I can't speak highly enough about Mybrandfirst. From the initial consultation to the ongoing campaign management, they've been a pleasure to work with. Their creative approach, coupled with their in-depth analytics, has helped us achieve remarkable ROI on our digital marketing investments. If you're looking for a reliable partner to take your online presence to the next level, look no further than Mybrandfirst.",
   }
 ]
