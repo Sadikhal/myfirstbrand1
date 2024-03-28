@@ -1,0 +1,6 @@
+
+.swiper-pagination-bullet{
+  --swiper-pagination-color: rgb(231, 165, 0);
+  --swiper-pagination-bullet-inactive-color: #ffff;
+
+}

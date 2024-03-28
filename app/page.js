@@ -6,6 +6,7 @@ import CounterUp from "@/components/sections/Slider";
 import SliderMotion from "@/components/sections/SliderMotion";
 import NavbarComponent from "@/components/sections/Navbar";
 import { Separator } from "@/components/ui/separator";
+import TestimonialSlider from "@/components/sections/TestimonialSlider";
 
 export default function Home() {
   return (
@@ -19,13 +20,20 @@ export default function Home() {
       {/* <div className="px-10 pt-5">
         <SliderMotion />
       </div> */}
+
       <div className="py-18 mt-12 relative">
         <CounterUp />
       </div>
-      <div className="xl:px-8  px-11 py-10">
+      <div className="hidden xl:block mt-8">
+        <TestimonialSlider number='2'/>
+      </div>
+      <div className="block xl:hidden mt-8">
+        <TestimonialSlider number='1'/>
+      </div>
+      <div className="xl:px-8  px-11 py-4">
         <AboutAgency />
       </div>
-      <div className="px-4 py-5">
+      <div className="px-4 py-5 mt-10">
         <CompanyDetails />
       </div>
       <div className="px-7 py-5">

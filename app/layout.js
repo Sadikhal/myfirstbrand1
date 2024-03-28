@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
     
         {children}
         <Toaster />
-        <div className="">
+        <div className="mt-10">
         <Separator className="w-full" />
 
        
