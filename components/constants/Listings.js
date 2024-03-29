@@ -22,27 +22,8 @@ export const Listings = [
     location: 'Bangalore',
     image: '/social media3.jpg'
   },
-  {
-    id: 36,
-    title: 'content writer',
-    type: 'Full Time',
-    location: 'Bangalore',
-    image: '/contents.jpg'
-  },
-  {
-    id: 35,
-    title: 'web designer',
-    type: 'Full Time',
-    location: 'Bangalore',
-    image: '/web design 1.jpg'
-  },
-  {
-    id: 34,
-    title: 'social media executive',
-    type: 'Full Time',
-    location: 'Bangalore',
-    image: '/social media.jpg'
-  }
+  
+  
 ];
 
 export const Teamswork = [
