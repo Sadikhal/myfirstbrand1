@@ -99,7 +99,7 @@ export const chooseTabs = [
   {
     id : 62,
     title : '3. Data-Driven Insights ',
-    answer: 'We harness the power of data.',
+    answer: "In today's data-driven landscape, decisions shouldn't be made on hunches or guesswork. That's why we place a strong emphasis on data-driven insights in our digital marketing approach. Through advanced analytics tools and in-depth research, we gather valuable data about your target audience, their behaviors, preferences, and interactions with your brand. This data isn't just numbers—it's actionable insights that inform our strategies, allowing us to optimize campaigns in real-time, identify areas for improvement, and continuously refine our approach for maximum impact. With data as our compass, we steer your digital marketing efforts towards success, driving measurable results and maximizing ROI.",
     img : '/grp teaching4.jpg'
   },
 ]

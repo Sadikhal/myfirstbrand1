@@ -33,6 +33,7 @@ const playfair_display = Playfair_Display({
 });
 
 export const metadata = {
+  icons : "/favLogo.png?v=1",
   title: "Mybrandfirst",
   description: "Digital market company in Bangalore",
 };

@@ -1,5 +1,5 @@
 export const blogNotes = [
-  {id: '254',
+  {id: "Importance-of-digital-marketing-in-today's-world",
     bannerImg: '/blog/blog501.jpg',
     category: 'digital marketing',
     date: 'March 19, 2024',
@@ -38,7 +38,7 @@ export const blogNotes = [
     ]
     
   },
-  {id: '255',
+  {id: '5-Digital-Marketing-Trends-to-Dominate-in-2024',
     category: 'digital marketing',
     bannerImg: '/blog/dg7.JPEG',
 
@@ -81,7 +81,7 @@ export const blogNotes = [
 
 
 
-  {id: '256',
+  {id: "The-Rise-of-Social-Commerce-How-to-Leverage-Social-Media-for-Sales-Success",
     category: 'Social Media',
     bannerImg: '/blog/paid2.png',
     date: 'March 21, 2024',

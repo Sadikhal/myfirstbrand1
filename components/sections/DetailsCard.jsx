@@ -15,7 +15,7 @@ const DetailsCard = ({ data }) => {
             {data.title}
           </div>
           <div>
-            <div className="font-rubik text-[16px] font-normal leading-[34px] flex gap-3 text-justify">
+            <div className="font-rubik text-[16px] font-normal leading-[34px] flex gap-3 text-left">
               {data.answer}
             </div> 
           </div>

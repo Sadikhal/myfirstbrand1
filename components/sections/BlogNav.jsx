@@ -4,7 +4,7 @@ import { Separator } from '../ui/separator'
 
 const BlogNav = () => {
   return (
-    <div className="lg:h-[470px] h-[420px] w-full bg-cover bg-center" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/blog/blogbanner.png)' }}>
+    <div className="lg:h-[470px] h-[420px] w-full bg-cover bg-center" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/blog/blog5080.png)' }}>
       <div className="">
         <div className="flex flex-col w-full">
           <NavbarRoutes />

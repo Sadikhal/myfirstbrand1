@@ -16,7 +16,7 @@ const DetailedFooter = () => {
         </div>
         </div> 
         <div className='text-15px font-rubik text-left'>
-          <span className='text-[#FC8D00]'>Mybrandfirst</span> is a one of the top digital company in Bangalore, India .At Mybrandfirst, we don’t just create campaigns; we craft success stories.  
+          <span className='text-[#FC8D00]'>Mybrandfirst</span> is a one of the top digital marketing agencies in Bangalore, India. With a blend of innovation, expertise, and passion, we turn ideas into impactful digital experiences that resonate with audiences and drive measurable results. 
         </div>
       </div>
        

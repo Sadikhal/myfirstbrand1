@@ -97,11 +97,9 @@ const HomePage = () => {
           description: "Thank you for your enquiry, we will contact soon",
          
         })
-       
-        console.log(values)
+        setState(initState);
       } else if (error) {
         console.error(error);
-        alert("something went wrong, please check your connection");
         toast({
           variant: "destructive",
           title: "Uh oh! Something went wrong.",
