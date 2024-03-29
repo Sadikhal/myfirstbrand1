@@ -21,7 +21,7 @@ const TestimonialSlider = ({number}) => {
   return (
     <div className='px-3 py-10 gap-12 flex flex-col h-full'>
         <div className='font-normal sm:text-[70px] uppercase leading-[.9em] font-teko text-[50px]'>
-          OUR HAPPY CUSTOMERS <span className='text-[#FC8D00]'>.</span>
+          OUR HAPPY clients <span className='text-[#FC8D00]'>.</span>
         </div>
         <Swiper
         swiper-pagination-bullet-active={{

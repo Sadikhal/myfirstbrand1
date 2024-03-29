@@ -10,7 +10,7 @@ const AboutAgency = () => {
         <div className='flex flex-col gap-12 xl:flex-[0.65]'>
           <div className='flex flex-col gap-8'>
             <div>
-              <h3 className='font-teko text-[60px] leading-[0.85em] font-normal uppercase'>our expert team<span>.</span></h3>
+              <h3 className='font-teko text-[60px] leading-[0.85em] font-normal uppercase'>our expert team</h3>
             </div>
             <div className='2xl:pt-8'>
               <img src="/grp teaching3.jpg" alt="teams" className='object-cover sm:h-[350px] md:h-[480px] lg:h-[550px] rounded-lg h-[290px] w-full grayscale-[89%] hover:grayscale-0 xl:h-[550px]'/>
