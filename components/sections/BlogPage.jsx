@@ -8,7 +8,7 @@ import { Separator } from '../ui/separator';
 
 const BlogPage = ({ blog }) => {
   return (
-    <div className='flex flex-col lg:flex-row gap-10 md:px-8 px-4 pl-10 h-full'>
+    <div className='flex flex-col lg:flex-row gap-10 px-8 pl-10 h-full'>
       <div className='flex-1 flex flex-col justify-center items-center'>
         <img src={blog?.img} alt="blog1" className='w-full object-cover h-full' />
         <div className='w-full py-8'>
@@ -40,7 +40,7 @@ const BlogPage = ({ blog }) => {
                   </div>
                   <div>
                     <p className='text-[16px] text-[#c4c4c4] tracking-0 font-rubik  leading-[2.1em] tracking-0]
-                    md:text-justify text-left'>
+                    text-justify'>
                       {item.description}
                     </p>
                   </div>
@@ -49,7 +49,7 @@ const BlogPage = ({ blog }) => {
               {blog.conclusion &&
               <div className='pt-12'>
                 <div className='text-[16px] text-foreground tracking-0 font-rubik  leading-[2.1em] tracking-0]
-                  text-[#c4c4c4] md:text-justify text-left '>
+                  text-[#c4c4c4] text-justify '>
                 {blog.conclusion}
                 </div>
               </div>

@@ -17,7 +17,7 @@ const page = () => {
       <BlogNav/>
       <ServiceCarousal/>
       <CarouselBlog/>
-      <div  className=' flex flex-col lg:flex-row gap-10  md:px-8 md:pl-10 pl-3 px-4  pt-12 items-start'>
+      <div  className=' flex flex-col lg:flex-row gap-10  px-8 pl-10 pt-12 items-start'>
           <div className='flex-1 '>
           {blogNotes.map((item, index) => (
         <BlogBanner key={item.id} item={item} isLast={index === blogNotes.length - 1} />
