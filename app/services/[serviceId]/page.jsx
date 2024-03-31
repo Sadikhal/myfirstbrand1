@@ -52,7 +52,7 @@ const ServiceIdPage = async ({ params }) => {
                         <div className="font-rubik text-base font-normal leading-[2.125em] lg:px-4 px-3 text-justify">
                             {service.desc}
                         </div>
-                        <div className="px-4 flex flex-col gap-12">
+                        <div className="lg:px-4 px-2 flex flex-col gap-12">
                             {service.active && 
                                 service.shortDesc.map((item) => (
                                     <div key={item.title} className="flex flex-col gap-5 py-2">
