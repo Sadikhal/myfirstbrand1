@@ -40,7 +40,7 @@ const ServiceIdPage = async ({ params }) => {
                 </div> 
             </div> 
            
-            <div className="px-8 flex flex-col gap-14">
+            <div className="lg:px-8 px-4 flex flex-col gap-14">
                 <h2 className="font-teko text-[42px] leading-[1.15em] md:text-[60px] md:leading-[1em] xl:text-[70px] xl:leading-[0.9em] font-normal uppercase hover:text-[#FC8D00]">
                     {service.title} <span className="text-[#FC8D00]">.</span>
                 </h2>
