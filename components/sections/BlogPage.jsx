@@ -27,7 +27,7 @@ const BlogPage = ({ blog }) => {
             </div>
             <div className='flex flex-col gap-4'>
               <div className='text-[16px] text-[#c4c4c4] font-open_sans first-letter:font-playfair_display' >
-                <p className='first-letter:text-7xl first-letter:font-[400] first-letter:text-white first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 text-justify md:ml-5 xl:ml-5 md:mr-3 lg:mr-0 font-rubik  leading-[2.1em] tracking-0'>
+                <p className='first-letter:text-7xl first-letter:font-[400] first-letter:text-white first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 whitespace-normal text-justify md:ml-5 xl:ml-5 md:mr-3 lg:mr-0 font-rubik  leading-[2.1em] tracking-0'>
                   {blog.introduction} :
                 </p>
               </div>
@@ -40,7 +40,7 @@ const BlogPage = ({ blog }) => {
                   </div>
                   <div>
                     <p className='text-[16px] text-[#c4c4c4] tracking-0 font-rubik  leading-[2.1em] tracking-0]
-                    text-justify'>
+                    whitespace-normal text-justify'>
                       {item.description}
                     </p>
                   </div>
@@ -49,7 +49,7 @@ const BlogPage = ({ blog }) => {
               {blog.conclusion &&
               <div className='pt-12'>
                 <div className='text-[16px] text-foreground tracking-0 font-rubik  leading-[2.1em] tracking-0]
-                  text-[#c4c4c4] text-justify '>
+                  text-[#c4c4c4] whitespace-normal text-justify '>
                 {blog.conclusion}
                 </div>
               </div>
