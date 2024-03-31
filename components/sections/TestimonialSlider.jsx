@@ -47,7 +47,7 @@ const TestimonialSlider = ({number}) => {
             <Card className="md:p-4 p-1 sm:p-2 bg-[#011222] group hover:bg-[#FC8D00] drop-shadow-2xl">
               <CardHeader>
         
-              <CardDescription className=" flex justify-between items-center">
+              <CardDescription className=" flex justify-between items-center px-0">
                 <div className='gap-6 flex items-center'>
                   <img src="/person11.png" className=' w-16 h-16 rounded-full object-contain' alt="" />
                   <div className='flex gap-1 flex-col '>
