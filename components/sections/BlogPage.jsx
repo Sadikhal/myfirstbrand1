@@ -40,7 +40,7 @@ const BlogPage = ({ blog }) => {
                   </div>
                   <div>
                     <p className='text-[16px] text-[#c4c4c4] tracking-0 font-rubik  leading-[2.1em] tracking-0]
-                    text-justify'>
+                    md:text-justify text-left'>
                       {item.description}
                     </p>
                   </div>
@@ -49,7 +49,7 @@ const BlogPage = ({ blog }) => {
               {blog.conclusion &&
               <div className='pt-12'>
                 <div className='text-[16px] text-foreground tracking-0 font-rubik  leading-[2.1em] tracking-0]
-                  text-[#c4c4c4] text-justify '>
+                  text-[#c4c4c4] md:text-justify text-left '>
                 {blog.conclusion}
                 </div>
               </div>
