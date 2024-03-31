@@ -32,8 +32,8 @@ const BlogBanner = ({item,isLast}) => {
 
               <div >
                 <p className='text-[16px] text-[#c4c4c4]  font-rubik  leading-[2.1em] first-letter:text-7xl first-letter:font-[400] first-letter:text-white
-                  first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 tracking-0 '>
-                {item.introduction} ....
+                  first-letter:mr-3 first-letter:float-left first-letter:font-playfair_display first-letter:uppercase first-letter:-mt-4 tracking-0 whitespace-normal text-justify'>
+                {item.introduction}
                 </p>
               </div>
               <Link href={`/blog/${item.id}`}  className='text-[15px] font-open_sans  '>
