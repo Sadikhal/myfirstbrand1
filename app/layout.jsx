@@ -33,9 +33,14 @@ const playfair_display = Playfair_Display({
 });
 
 export const metadata = {
-  icons : "/favLogo.png?v=1",
   title: "Mybrandfirst",
   description: "Digital market company in Bangalore",
+  icons: {
+    icon: ["/favicon.ico"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
+  manifest: "/favicon/site.webmanifest",
 };
 
 export default function RootLayout({ children }) {
