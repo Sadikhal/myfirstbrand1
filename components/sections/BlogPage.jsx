@@ -8,7 +8,7 @@ import { Separator } from '../ui/separator';
 
 const BlogPage = ({ blog }) => {
   return (
-    <div className='flex flex-col lg:flex-row gap-10 px-8 pl-10 h-full'>
+    <div className='flex flex-col lg:flex-row gap-10 md:px-8 px-3 pl-10 h-full'>
       <div className='flex-1 flex flex-col justify-center items-center'>
         <img src={blog?.img} alt="blog1" className='w-full object-cover h-full' />
         <div className='w-full py-8'>
