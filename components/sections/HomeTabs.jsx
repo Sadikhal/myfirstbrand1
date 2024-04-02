@@ -16,7 +16,7 @@ const HomeTabs = () => {
                 {item.title}
               </AccordionTrigger>
               <AccordionContent className='w-full timing'>
-                <img src={item.img} className='object-cover rounded-lg grayscale-[89%] hover:grayscale-0' alt='banners' />
+                <img src={item.img} className='object-cover rounded-lg grayscale-[89%] hover:grayscale-0 w-full sm:h-full h-[230px] ' alt='banners' />
               </AccordionContent>
               <AccordionContent className='font-rubik text-[16px] font-normal leading-[2.125em] w-full text-justify ' >
                 {item.desc}

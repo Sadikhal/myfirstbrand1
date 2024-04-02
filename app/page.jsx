@@ -34,7 +34,7 @@ export default function Home() {
           <TestimonialSlider number='1'/>
         </div>
       </ClientOnly> 
-      <div className="xl:px-8  px-11 py-4">
+      <div className="xl:px-8 px-5 md:px-11 py-4">
         <AboutAgency />
       </div>
       <div className="px-4 py-5 mt-10">
