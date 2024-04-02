@@ -9,7 +9,7 @@ import { faqItems } from '../constants/FormItems';
 
 const Faqs = () => {
   return (
-    <div className='flex flex-col gap-12 px-2'>
+    <div className='flex flex-col gap-12 sm:px-2 '>
       <div className='flex justify-center items-center'>
         <h3 className='font-teko text-[60px] mb-5 leading-[0.85em] font-normal uppercase'>
           Mybrandfirst FAQ'S <span className='text-[#FC8D00]'>.</span>
@@ -26,9 +26,9 @@ const Faqs = () => {
             <div key={item.id} className='text-right'>
               <AccordionItem
                 value={item.id}
-                className='text-slate-900 data-[state=open]:text-foreground flex flex-col items-start gap-4'
+                className='text-slate-900 data-[state=open]:text-foreground flex flex-col items-start gap-4 outline-none'
               >
-                <AccordionTrigger className='text-left font-teko leading-[32px] font-normal text-[20px] uppercase cursor-pointer tracking-[1px] text-wrap'>
+                <AccordionTrigger className='text-left font-teko leading-[32px] font-normal text-[20px] uppercase cursor-pointer tracking-[1px] text-wrap outline-none'>
                   {item.title}
                 </AccordionTrigger>
                 <AccordionContent className="font-rubik text-[16px] font-normal leading-[2.125em]  text-justify">
