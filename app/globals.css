@@ -16,7 +16,9 @@ body,
  
 }
 
-
+.words{
+  word: spacing -0.5em;
+}
 
 
 @layer base {
