@@ -17,13 +17,13 @@ const ContactList = () => {
 
             <div className="flex flex-col gap-4 text-right bg-white/70 text-black backdrop-opacity-10 backdrop-invert px-12 py-6 rounded-lg w-full md:w-3/5 sm:mx-auto lg:w-4/5 sm:w-4/5">
               <div className="flex flex-row gap-3 items-center">
-                <Contact className="" />
-                <div className="font-teko text-[24px] font-[500]">Bindu Nambiar</div>
+                <Contact className="hidden" />
+                <div className="font-teko text-[24px] font-[500] hidden">Bindu Nambiar</div>
               </div>
 
               <div className="flex flex-row gap-3 items-center">
-                <Phone className="" />
-                <div className="font-teko text-[24px] font-[500] leading-[.8em]">+91 91130 33835</div>
+                <Phone className="hidden" />
+                <div className="font-teko text-[24px] font-[500] leading-[.8em] hidden">+91 91130 33835</div>
               </div>
 
               <div className="flex flex-row gap-3">
@@ -49,7 +49,7 @@ const ContactList = () => {
           <div className="text-left flex flex-col gap-3">
             <ContactCard icon={<MapPin />} content="Jayanagar, Bangalore." href="https://maps.app.goo.gl/rq6NNmw2b4KuN9PTA" />
             <ContactCard icon={<Mail />} content="Info@mybrandfirst.com" href="mailto:Info@mybrandfirst.com" />
-            <ContactCard icon={<Phone />} content="+91 91130 33835" href="tel:+919113033835" />
+            {/* <ContactCard icon={<Phone />} content="+91 91130 33835" href="tel:+919113033835 " /> */}
           </div>
         </div>
       </div>

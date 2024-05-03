@@ -44,18 +44,28 @@ const NavbarRoutes = () => {
         ))}
       </div>
 
-      <div className="hidden lg:flex flex-row gap-4 items-center">
-        <img className="w-[40px] h-[40px] object-contain" src="/contact.png" alt="" />
+      {/* <div className="hidden lg:flex flex-row gap-4 items-center">
+        <img className="w-[40px] h-[40px] object-contain" src="/gmail logo.png" alt="" />
         <div className="flex flex-col gap-y-0">
           <div className="font-[500] text-[25px] tracking-[.03em] uppercase font-teko leading-[18px] text-foreground">
             for enquiry
           </div>
           <div className="font-[400] text-[25px] tracking-[.03em] uppercase font-teko leading-[24px] text-foreground">
-            +91 9113033835
+          Info@mybrandfirst.com
+          </div>
+        </div>
+      </div> */}
+       <div className="hidden lg:flex flex-row gap-4 items-center">
+        <img className="w-[50px] h-[50px] object-contain " src="/logo11.png" alt="" />
+        <div className="flex flex-col gap-y-0">
+          <div className="font-[500] text-[25px] tracking-[.03em] uppercase font-teko leading-[18px] text-foreground">
+            for enquiry
+          </div>
+          <div className="font-[400] text-[20px] tracking-[.03em] uppercase font-teko leading-[24px] text-[#FC8D00]">
+          Info@mybrandfirst.com
           </div>
         </div>
       </div>
-
       <div className="lg:hidden">
         <Mobilenav routes={routes} />
       </div>

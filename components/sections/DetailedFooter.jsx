@@ -75,10 +75,10 @@ const DetailedFooter = () => {
         </div>
         <div className='flex flex-col gap-3 md:mr-11 lg:mr-0'>
           <div className="flex flex-row gap-3 items-center">
-                <Contact size={20} className="text-slate-500" />
-                <div className="font-rubik text-[15px] hover:text-[#FC8D00]">Bindu Nambiar</div>
+                {/* <Contact size={20} className="text-slate-500" />
+                <div className="font-rubik text-[15px] hover:text-[#FC8D00]">Bindu Nambiar</div> */}
               </div>
-              <div className="flex flex-row gap-3 items-center">
+              <div className=" flex-row gap-3 items-center hidden">
                 <Phone size={20} className='text-slate-500' />
                 <div className="font-rubik text-[15px] hover:text-[#FC8D00]">+91 91130 33835</div>
               </div>
