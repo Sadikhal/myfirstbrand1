@@ -32,9 +32,9 @@ const page = () => {
           grid-cols-1 
           sm:grid-cols-1
           md:grid-cols-1 
-          lg:grid-cols-2
-          
+          lg:grid-cols-2  
           gap-7 lg:gap-10
+
           xl:gap-12
         "
       >
