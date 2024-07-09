@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactForm from '@/components/sections/ContactForm';
+import DoctorContactForm from './DoctorContactForm';
 
 const DoctorContact = () => {
   return (
@@ -20,7 +20,7 @@ const DoctorContact = () => {
           <div className='flex flex-col gap-15'>
             <h2 className='font-teko text-[36px] leading-[1.15em] sm:text-[42px] sm:leading-[1.15em] md:text-[60px] md:leading-[1em] lg:text-[70px] lg:leading-[0.9em] font-normal hover:text-[#FC8D00] lg:font-[400px] uppercase hidden lg:flex'>Contact us<span className='text-[#FC8D00]'>.</span></h2>
             <div>
-              <ContactForm />
+              <DoctorContactForm/>
             </div>
           </div>
         </div>
