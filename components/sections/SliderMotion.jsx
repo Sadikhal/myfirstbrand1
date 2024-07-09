@@ -4,6 +4,7 @@ import ProgressBars from './SliderMotionItems'
 const SliderMotion = () => {
   const items = [
     {
+      
       id : 33,
       title : 'Seo services',
       value: 93
