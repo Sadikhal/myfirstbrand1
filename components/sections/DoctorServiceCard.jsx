@@ -11,10 +11,10 @@ const DoctorServiceCard = ({ data }) => {
     whileInView="animate"
     
      className="flex flex-col gap-4 w-full group hover:border border-slate-300  py-5 bg-black">
-       <div className="font-medium sm:text-[40px] text-[30px] uppercase leading-[0.85em] font-teko underline hover:no-underline text-[#FC8D00] px-2 py-5 ">
+       <div className="font-medium sm:text-[35px] md:text[40px] text-[26px] uppercase  font-teko underline hover:no-underline text-[#FC8D00] px-2 py-5 text-nowrap">
           {data.title}
         </div>
-      <div className="w-full relative overflow-hidden ">
+      <div className="w-full relative overflow-hidden  ">
         <img
           src={data.img}
           alt="career"
