@@ -24,7 +24,8 @@ const page = () => {
         </div>
       </div>
       <div
-        className="px-5
+        className="
+        px-5
           md:px-7
           pt-10
           grid 
