@@ -34,7 +34,6 @@ const page = () => {
           lg:grid-cols-2
           gap-7 lg:gap-10
           xl:gap-12"
-        
       >
         {DoctorServices.map((listing) => (
          <div>
