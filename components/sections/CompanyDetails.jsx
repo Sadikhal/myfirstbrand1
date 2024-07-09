@@ -16,6 +16,7 @@ const CompanyDetails = () => {
           <DetailsCard
             key={listing.id}
             data={listing}
+            contact = {true}
           />
         ))}
       </div>

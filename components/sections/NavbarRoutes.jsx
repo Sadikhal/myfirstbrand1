@@ -10,6 +10,7 @@ const NavbarRoutes = () => {
 
   const routes = [
     { label: 'Home', href: '/', active: pathname === '/' },
+    { label: 'MyDoctorFirst', href: '/myDoctorFirst', active: pathname === '/myDoctorFirst' || pathname.startsWith('/myDoctorFirst') },
     { label: 'About Us', href: '/about', active: pathname === '/about' || pathname.startsWith('/about') },
     { label: 'Services', href: '/services/1', active: pathname === '/service' || pathname.startsWith('/service') },
     { label: 'Contact', href: '/contact', active: pathname === '/contact' },

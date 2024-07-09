@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { Button } from '../ui/button';
 
-const DetailsCard = ({ data }) => {
+const DetailsCard = ({ data,contact }) => {
   return (
     <div className="flex flex-col gap-8 w-full group hover:border border-slate-300 rounded-2xl text-slate-900 bg-slate-100 justify-between">
       <div>
@@ -21,6 +21,7 @@ const DetailsCard = ({ data }) => {
           </div>
         </div> 
       </div>
+      {contact && 
       <div className="flex justify-center items-center py-2 pb-14 -pt-5">
         <Link href="/contact" key={data.id}>
           <Button className="text-[18px] font-normal leading-[30px] tracking-[0.1em] font-teko bg-[#FC5D00] hover:bg-slate-900 hover:text-foreground px-[50px] py-[33px] uppercase">
@@ -28,6 +29,7 @@ const DetailsCard = ({ data }) => {
           </Button>
         </Link>   
       </div>
+    }
     </div> 
   );
 };

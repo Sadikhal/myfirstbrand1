@@ -54,8 +54,6 @@ export default function RootLayout({ children }) {
         <Toaster />
         <div className="mt-10">
         <Separator className="w-full" />
-
-       
           <DetailedFooter/>
           <Separator className="w-full" />
           <div className="flex items-center justify-center">

@@ -3,10 +3,8 @@
 import React, { useState } from 'react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
-import BlogCard from './BlogCard'
 import { Separator } from '../ui/separator'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { blogNotes } from '../constants/BlogNotes'
 
 
 
