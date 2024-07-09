@@ -110,3 +110,21 @@ export const descVariant = {
     },
   },
 };
+
+export const fadeVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+    
+  },
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      
+      delay: .9 * index,
+      type: 'tween',
+      ease: 'easeIn',
+    },
+  }),
+};

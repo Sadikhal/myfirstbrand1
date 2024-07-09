@@ -5,7 +5,6 @@ import IntroBanner from "@/components/sections/IntroBanner";
 import CounterUp from "@/components/sections/Slider";
 import SliderMotion from "@/components/sections/SliderMotion";
 import NavbarComponent from "@/components/sections/Navbar";
-import { Separator } from "@/components/ui/separator";
 import TestimonialSlider from "@/components/sections/TestimonialSlider";
 import ClientOnly from "@/components/sections/ClientOnly";
 
