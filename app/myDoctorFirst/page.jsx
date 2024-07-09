@@ -25,7 +25,7 @@ const page = () => {
       </div>
       <div
         className="
-          px-5
+        px-5
           md:px-7
           pt-10
           grid 
@@ -33,9 +33,9 @@ const page = () => {
           sm:grid-cols-1
           md:grid-cols-1 
           lg:grid-cols-2
-          
-          gap-12
-        "
+          gap-7 lg:gap-10
+          xl:gap-12"
+        
       >
         {DoctorServices.map((listing) => (
          <div>
