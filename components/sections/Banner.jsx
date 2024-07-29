@@ -8,7 +8,7 @@ const Banner = ({ title, page, active, servicePage }) => {
     <div className="lg:h-[470px] h-[350px] w-full bg-cover bg-center" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/dm6-modified.jpg)' }}>
       <div className="">
         <div className="flex flex-col w-full">
-          <NavbarRoutes />
+          <NavbarRoutes img='./logo.png' />
           <Separator className="bg-slate-300" />
         </div>
         <div className="flex flex-col justify-center items-center lg:h-[300px] h-[200px] text-foreground">

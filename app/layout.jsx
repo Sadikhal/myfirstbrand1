@@ -34,7 +34,7 @@ const playfair_display = Playfair_Display({
 
 export const metadata = {
   title: "Mybrandfirst",
-  description: "Digital market company in Bangalore",
+  description: "Digital marketing company in Bangalore",
   icons: {
     icon: ["/favicon.ico"],
     apple: ["/apple-touch-icon.png?v=4"],

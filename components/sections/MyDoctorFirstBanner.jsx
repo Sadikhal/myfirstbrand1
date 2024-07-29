@@ -21,7 +21,7 @@ const MyDoctorFirstBanner = () => {
         variants={navVariants}
       />
       <div className="relative z-10">
-        <NavbarRoutes />
+        <NavbarRoutes  img='/logo12.png'/>
         <Separator className='bg-slate-300' />
       </div>
 

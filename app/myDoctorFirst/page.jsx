@@ -14,14 +14,18 @@ const page = () => {
         <MyDoctorFirstBanner/>
       </div> 
       <div className="flex flex-col text-left gap-10 xl:gap-18 px-3 sm:px-4 md:px-6">
-        <h2 className="font-teko text-4xl leading-[1.15em] md:text-[60px] md:leading-[1em] xl:text-[70px] xl:leading-[0.9em] font-normal uppercase relative hover:text-[#FC8D00]">
-          our digital services <span className="absolute bottom-0 ml-1 text-[#FC8D00]">.</span>
-        </h2>
+       
         <div className="font-rubik text-base font-normal leading-[2.125em] text-justify px-2 lg:px-5">
-          Mybrandfirst is a premier digital marketing agency committed to propelling brands into the digital spotlight. Our team of experts guides clients through the intricacies of digital marketing, offering personalized approaches to each project.
-          <br/>
-          <br/> What sets us apart is our unwavering commitment to excellence and innovation. We continuously monitor industry trends, experiment with new technologies, and refine our strategies for maximum effectiveness. Partnering with Mybrandfirst ensures dedication to your success. Embark on a digital journey with us today to unlock the full potential of your brand online.
+
+        <div className='font-teko text-[36px] leading-[1.15em] sm:text-[42px] sm:leading-[1.15em] font-normal capitalize text-[#FC8D00]'>Welcome to MyDoctorsFirst
+        </div> 
+        At MyDoctorsFirst, we specialize in providing top-notch digital marketing solutions exclusively for healthcare professionals. Our mission is to empower doctors, hospitals, and clinics with the tools and strategies they need to thrive in the digital age.
+           
         </div>
+        <div className='flex flex-col gap-5 px-2 lg:px-5'>
+              <h2 className='font-teko text-[36px] leading-[1.15em] sm:text-[42px] sm:leading-[1.15em] font-normal capitalize'>Who We Are</h2>
+              <div className="font-rubik text-base font-normal leading-[2.125em] text-justify lg:mr-4 mr-2">MyDoctorsFirst is an extension of MyBrandFirst, a renowned digital marketing agency known for delivering exceptional results across various industries. Leveraging our extensive experience and industry expertise, we have dedicated a specialized team to focus on the unique needs of the healthcare sector.</div>  
+              </div>
       </div>
       <div
         className="px-5
