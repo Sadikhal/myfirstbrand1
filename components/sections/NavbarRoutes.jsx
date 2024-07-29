@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { Services } from './Service';
 import Mobilenav from './MobileNav';
 
-const NavbarRoutes = () => {
+const NavbarRoutes = ({img}) => {
   const pathname = usePathname();
 
   const routes = [
@@ -22,7 +22,7 @@ const NavbarRoutes = () => {
     <main className="flex flex-row justify-between items-center z-2 pr-6">
       <Link key='img' href='/'>
       <img
-        src="/logo.png"
+        src={img}
         alt="logo"
         className="w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] object-contain z-999 opacity-8"
       />
