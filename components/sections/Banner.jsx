@@ -7,7 +7,7 @@ const Banner = ({ title, page, active, servicePage }) => {
   return (
     <div className="lg:h-[470px] h-[350px] w-full bg-cover bg-center" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/dm6-modified.jpg)' }}>
       <div>
-        <div className="flex flex-col w-full ">
+        <div className="flex flex-col w-full">
           <NavbarRoutes img='./logo.png' />
           <Separator className="bg-slate-300" />
         </div>
